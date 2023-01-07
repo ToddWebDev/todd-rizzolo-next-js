@@ -3,7 +3,7 @@ import styles from '../Components.module.css'
 
 const Highlight = () => (
   <section>
-    <h2>My Latest Achievement</h2>
+    <h2>My Recent</h2>
     <p>My latest design and development work for Lendio SaaS products.</p>
     {/* <div className={feature}>
       <div className={video}>

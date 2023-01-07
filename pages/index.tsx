@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Layout from './components/Layout'
@@ -8,9 +9,22 @@ import ProjectsSection from './components/ProjectsSection'
 import ContactSection from './components/ContactSection'
 
 export default function Home() {
+  const [theme, toggleTheme] = useState('light')
+  const inactiveTheme = theme === 'light' ? 'dark' : 'light'
+
   function scrollToTop(e) {
     console.log(e)
   }
+
+  useEffect(() => {
+    const theme = window.localStorage.getItem('theme')
+    theme && toggleTheme(theme)
+  }, [])
+
+  useEffect(() => {
+    document.body.dataset.theme = theme
+    window.localStorage.setItem('theme', theme)
+  }, [theme])
 
   return (
     <>
@@ -25,6 +39,17 @@ export default function Home() {
       </Head>
 
       <Layout>
+        <div style={{ position: 'absolute', top: '3rem', right: '3rem' }}>
+          {theme === 'light' ? (
+            <button onClick={() => toggleTheme('dark')}>
+              <i aria-hidden className='fas fa-cloud-sun'></i> Light Theme
+            </button>
+          ) : (
+            <button onClick={() => toggleTheme('light')}>
+              <i aria-hidden className='fas fa-moon'></i> Dark Theme
+            </button>
+          )}
+        </div>
         <OverviewSection />
         <HighlightSection />
         <PortfolioSection />
