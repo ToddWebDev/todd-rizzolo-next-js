@@ -1,16 +1,203 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Nunito+Sans:wght@700&family=Vujahday+Script&display=swap');
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  --primary-one: #c53058;
+  --primary-two: #aa284b;
+  --base-one: #0d2d3e;
+  --base-two: #164c69;
+  --base-three: #3f7893;
+  --base-four: #c4d3dc;
+  --base-five: #dce5eb;
+  --base-six: #f5f8fa;
+  --black: var(--base-one);
+  --white: #fff;
+
+  --bg: var(--base-six);
+
+  --text-color-strong: var(--base-one);
+  --text-color-medium: var(--base-two);
+  --text-color-light: var(--base-three);
+  --text-color-deemphasized: var(--base-four);
+
+  --text-shadow-dark: 1px 1px 2px rgba(0, 0, 0, 0.2);
+
+  --border-width: 1px;
+  --border-radius: 8px;
+
+  --base-font-size: 18px;
+
+  --screen-sm: 600px;
+  --screen-md: 768px;
+  --screen-lg: 992px;
+  --screen-xl: 1200px;
+
+  --transition: all 0.2s ease-in-out;
+
+  font-family: 'Catamaran', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: var(--base-font-size);
+  color: var(--text-color-medium);
+  line-height: 1.4;
+  background-color: var(--bg);
+  background-image: linear-gradient(
+      295deg,
+      rgba(245, 248, 250, 0) 0%,
+      rgba(245, 248, 250, 0.99) 50%,
+      rgba(245, 248, 250, 1) 100%
+    ),
+    url(/images/pattern-randomized.svg);
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+body.dark {
+  --base-six: #0d2d3e;
+  --base-five: #164c69;
+  --base-four: #3f7893;
+  --base-three: #c4d3dc;
+  --base-two: #dce5eb;
+  --base-one: #f5f8fa;
+  --white: var(--base-five);
+
+  --text-color-strong: var(--base-one);
+  --text-color-medium: var(--base-two);
+  --text-color-light: #fff;
+  --text-color-deemphasized: #374a57;
+
+  background-image: linear-gradient(
+      295deg,
+      rgba(13, 45, 62, 0.75) 0%,
+      rgba(13, 45, 62, 0.99) 50%,
+      rgba(13, 45, 62, 1) 100%
+    ),
+    url(/images/pattern-randomized-dark.svg);
+}
+
+section {
+  padding: 3rem 0;
+}
+
+section + section {
+  margin-top: -3rem;
+}
+
+footer {
+  max-width: none;
+}
+
+footer > * {
+  max-width: 75ch;
+}
+
+footer a {
+  color: #c4d3dc;
+  display: inline-block;
+  padding: 0.5rem;
+  text-decoration: none;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  color: #c4d3dc;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--text-color-strong);
+  font-family: Futura PT, 'Nunito Sans', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.text-color-deemphasized {
+  color: var(--text-color-deemphasized);
+}
+
+a {
+  color: var(--primary-one);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--primary-two);
+}
+
+button {
+  background: var(--primary-one);
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  padding: 1em;
+  font-size: 14px;
+  text-shadow: var(--text-shadow-dark);
+  outline: 0;
+  transition: var(--transition);
+  box-shadow: 2px 2px 2px transparent;
+}
+
+button:hover {
+  cursor: pointer;
+  background: var(--primary-two);
+}
+
+button:focus {
+  box-shadow: 0 0 0 3px rgba(197, 48, 88, 0.75);
+}
+
+button.secondary {
+  color: var(--text-color-strong);
+  background: none;
+  border: 1px solid var(--base-three);
+  text-shadow: none;
+}
+
+button.secondary:hover {
+  background: var(--base-five);
+}
+
+button.secondary:focus {
+  box-shadow: 0 0 0 3px rgba(220, 229, 235, 0.75);
+}
+
+blockquote {
+  position: relative;
+  font-size: 1.3rem;
+  padding: 0.5em 2em;
+  margin: 0;
+}
+
+blockquote:before {
+  font-family: 'Font Awesome 5 Free';
+  font-size: 2rem;
+  font-weight: 900;
+  content: '\f10d';
+  color: var(--base-five);
+  line-height: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
 }

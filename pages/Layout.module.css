@@ -1,0 +1,158 @@
+/* Mobile First Layout */
+.header {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem;
+  position: relative;
+  text-align: center;
+  text-shadow: var(--text-shadow-dark);
+
+  background-color: var(--black);
+  background-attachment: scroll;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(22, 76, 105, 0.9),
+      rgba(13, 45, 62, 0.9)
+    ),
+    url(/images/ministrygrid-mockup.jpg);
+  background-position-x: center, -117vw;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+}
+
+.header h1 {
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.header h2,
+.header h4 {
+  color: #c4d3dc;
+  font-size: 1.3em;
+}
+
+.header i {
+  color: var(--primary-one);
+}
+
+.header a:hover,
+.header a:focus {
+  color: #f5f8fa;
+}
+
+.image {
+  margin-top: 1em;
+  transform: rotate(-3deg);
+  box-shadow: -3px 3px 12px 2px rgb(0 0 0 / 40%);
+  /* animation: shake 0.2s forwards; */
+  /* animation-iteration-count: 4; */
+}
+
+.image img {
+  color: var(--primary-one);
+  border-radius: 2px;
+  border: 10px solid #fff;
+  border-bottom-width: 64px;
+}
+
+.image:after {
+  position: absolute;
+  bottom: 16px;
+  left: 10px;
+  content: 'Todd';
+  font-family: 'Vujahday Script', cursive;
+  font-size: 26px;
+  color: #222;
+}
+
+.footer {
+  max-width: none;
+}
+
+.content {
+  padding: 0 1em;
+}
+
+.content ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: flex-start;
+  margin: 0;
+}
+
+.content li {
+  padding: 0.5em 1em;
+  border: 1px solid var(--base-four);
+  background: var(--base-five);
+  margin: 0 0.5em 0.5em 0;
+  border-radius: var(--border-radius);
+}
+
+.content li:last-child {
+  display: none;
+}
+
+.footer {
+  background: var(--base-five);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  padding: 2em 1em;
+  max-width: none;
+}
+
+/* Desktop Layout */
+@media only screen and (min-width: 767px) {
+  .header {
+    position: fixed;
+    text-align: right;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 35%;
+    background-position-x: center, -31vw;
+  }
+
+  .header a div {
+    margin-top: 0;
+  }
+
+  .content,
+  .footer {
+    padding: 3rem;
+    margin-left: 35%;
+    width: 65%;
+  }
+
+  .content li:last-child {
+    display: inline-block;
+    flex: 1;
+    opacity: 0.3;
+    align-self: stretch;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(-3deg);
+  }
+  25% {
+    transform: translate(-3px, 0px) rotate(-2deg);
+  }
+  25% {
+    transform: translate(-3px, 0px) rotate(-1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(0deg);
+  }
+  75% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  75% {
+    transform: translate(3px, 1px) rotate(-2deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-3deg);
+  }
+}
