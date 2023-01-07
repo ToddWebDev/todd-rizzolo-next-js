@@ -1,5 +1,6 @@
 import React from 'react'
-// import { StaticImage } from 'gatsby-plugin-image'
+import Image from 'next/image'
+import profilePic from '../images/timpanogos2020.jpg'
 import styles from '../Layout.module.css'
 
 // import Footer from './footer'
@@ -20,14 +21,9 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div>
-        {/* <StaticImage
-          className={image}
-          src="/images/profile-image.jpg"
-          alt="Profile Image"
-          placeholder="blurred"
-          width={250}
-          height={250}
-        /> */}
+        <div className={styles.image}>
+          <Image src={profilePic} alt='Profile Image' />
+        </div>
         <h1>Todd Rizzolo</h1>
         <h2>
           {' '}

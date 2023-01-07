@@ -50,7 +50,8 @@ body {
       rgba(245, 248, 250, 0.99) 50%,
       rgba(245, 248, 250, 1) 100%
     ),
-    url(/images/pattern-randomized.svg);
+    url('./images/pattern-randomized.svg');
+  background-size: cover;
   scroll-behavior: smooth;
   margin: 0;
 }
@@ -75,7 +76,7 @@ body.dark {
       rgba(13, 45, 62, 0.99) 50%,
       rgba(13, 45, 62, 1) 100%
     ),
-    url(/images/pattern-randomized-dark.svg);
+    url('./images/pattern-randomized-dark.svg');
 }
 
 section {
