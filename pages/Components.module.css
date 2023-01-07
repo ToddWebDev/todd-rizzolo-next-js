@@ -12,6 +12,7 @@
 .card {
   z-index: 0;
   position: relative;
+  max-width: 44ch;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -32,12 +33,14 @@
   font-size: 3em;
 }
 
-.card ul {
+.cards > .card ul,
+.smallCards > .card ul {
   gap: 0.5em;
   margin: 1em 0;
 }
 
-.card li {
+.cards > .card li,
+.smallCards > .card li {
   font-size: 0.8rem;
   padding: 0.2em 0.5em;
   margin: 0;
@@ -45,8 +48,8 @@
 
 .card li:last-child {
   display: inline-block;
-  flex-grow: inherit;
-  opacity: 1;
+  flex: 0 0 auto !important;
+  opacity: 1 !important;
   flex-basis: auto;
 }
 

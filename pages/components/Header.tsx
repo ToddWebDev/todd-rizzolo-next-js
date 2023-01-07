@@ -2,8 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import profilePic from '../images/timpanogos2020.jpg'
 import styles from '../Layout.module.css'
-
-// import Footer from './footer'
+import ContactFooter from './ContactFooter'
 
 const Header = () => {
   const baseURL = 'https://api.github.com'
@@ -27,15 +26,14 @@ const Header = () => {
         <h1>Todd Rizzolo</h1>
         <h2>
           {' '}
-          Half Stack Developer. Front-End Coder.
-          <br />
-          UX. User Interface Builder.
+          Half Stack Developer <br />
+          User Interface Builder
         </h2>
         <h4>
           <i aria-hidden className='fas fa-map-pin'></i> Salt Lake City, Utah
         </h4>
       </div>
-      {/* <Footer /> */}
+      <ContactFooter />
     </header>
   )
 }

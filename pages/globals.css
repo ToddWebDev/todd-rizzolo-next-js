@@ -51,12 +51,12 @@ body {
       rgba(245, 248, 250, 1) 100%
     ),
     url('./images/pattern-randomized.svg');
-  background-size: cover;
+  background-size: contain;
   scroll-behavior: smooth;
   margin: 0;
 }
 
-body.dark {
+body[data-theme='dark'] {
   --base-six: #0d2d3e;
   --base-five: #164c69;
   --base-four: #3f7893;

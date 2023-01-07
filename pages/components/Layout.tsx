@@ -9,11 +9,10 @@ export default function Layout({ children }) {
       <main className={styles.content}>{children}</main>
       <div className={styles.footer}>
         <p>
-          This site is built with the Jamstack. The Jam in Jamstack stands for
-          JavaScript, APIs, and HTML markup. Gatsby JS generates these files
+          This site is built with the Next JS. Next JS generates these files
           during the build process and Netlify provides continuous deployments
           triggered by Git. This site is blazing fast and secure. Yeah,
-          it`&apos;`s pretty awesome.
+          it&apos;s pretty awesome.
         </p>
         <a href='#'>View Site Performance</a>
       </div>
