@@ -24,7 +24,14 @@ const Header = () => {
     <header className={styles.header}>
       <div>
         <div className={styles.image}>
-          {profilePic && <img src={profilePic} alt='Profile Image' />}
+          {profilePic && (
+            <img
+              src={profilePic}
+              alt='Profile Image'
+              width='350'
+              height='350'
+            />
+          )}
         </div>
         <h1>Todd Rizzolo</h1>
         <h2>

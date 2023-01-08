@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Head from 'next/head'
+import Script from 'next/script'
 import Layout from './components/Layout'
 import OverviewSection from './components/OverviewSection'
 import HighlightSection from './components/HighlightSection'
@@ -62,10 +63,6 @@ export default function Home() {
           sizes='16x16'
           href='/favicon-16x16.png'
         />
-        <link
-          href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
-          rel='stylesheet'
-        />
       </Head>
 
       <Layout>
@@ -92,6 +89,10 @@ export default function Home() {
           </a>
         </section>
       </Layout>
+      <Script
+        src='https://kit.fontawesome.com/02130b3d51.js'
+        crossOrigin='anonymous'
+      />
     </>
   )
 }
