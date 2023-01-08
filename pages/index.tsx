@@ -10,7 +10,6 @@ import ContactSection from './components/ContactSection'
 
 export default function Home() {
   const [theme, toggleTheme] = useState('light')
-  const inactiveTheme = theme === 'light' ? 'dark' : 'light'
 
   function scrollToTop() {
     window.scrollTo({
@@ -87,7 +86,7 @@ export default function Home() {
         <ProjectsSection />
         <ContactSection />
         <section>
-          <a href='#top' onClick={(e) => scrollToTop()}>
+          <a href='#' onClick={(e) => scrollToTop()}>
             <i aria-hidden className='fas fa-angle-double-up'></i> Back to top
           </a>
         </section>

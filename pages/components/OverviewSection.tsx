@@ -14,7 +14,7 @@ const Overview = () => {
     <section>
       <h2>Front-End Web Developer</h2>
       <blockquote>
-        {readMore ? descriptionText : descriptionText.slice(0, 311) + '...'}
+        {readMore ? descriptionText : descriptionText.slice(0, 331) + '...'}
         <br />
         {!readMore && (
           <a href='#' onClick={(e) => handleClick(e)}>
@@ -42,8 +42,8 @@ const Overview = () => {
       <ul>
         <li>HTML</li>
         <li>CSS</li>
-        <li>Styled Components</li>
         <li>Tailwind</li>
+        <li>Styled Components</li>
         <li></li>
       </ul>
       <ul>

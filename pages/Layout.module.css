@@ -99,6 +99,18 @@
   display: none;
 }
 
+.content:before {
+  position: absolute;
+  left: 35%;
+  margin-top: 10px;
+  height: 5px;
+  border-radius: var(--border-radius);
+  display: block;
+  width: 100px;
+  background: var(--base-five);
+  content: '';
+}
+
 .footer {
   background: var(--base-five);
   padding: 2em 1em;
@@ -142,9 +154,13 @@
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1200px) {
   .header {
     padding: 3rem;
+  }
+
+  .content:before {
+    display: none;
   }
 
   .image {
