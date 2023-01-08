@@ -12,7 +12,6 @@
 .card {
   z-index: 0;
   position: relative;
-  max-width: 44ch;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

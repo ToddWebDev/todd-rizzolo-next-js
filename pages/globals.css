@@ -87,14 +87,6 @@ section + section {
   margin-top: -3rem;
 }
 
-footer {
-  max-width: none;
-}
-
-footer > * {
-  max-width: 75ch;
-}
-
 footer a {
   color: #c4d3dc;
   display: inline-block;

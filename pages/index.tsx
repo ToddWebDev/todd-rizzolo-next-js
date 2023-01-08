@@ -39,7 +39,7 @@ export default function Home() {
       </Head>
 
       <Layout>
-        <div style={{ position: 'absolute', top: '3rem', right: '3rem' }}>
+        <div style={{ position: 'absolute', top: '2rem', right: '2rem' }}>
           {theme === 'light' ? (
             <button onClick={() => toggleTheme('dark')}>
               <i aria-hidden className='fas fa-cloud-sun'></i> Light Theme

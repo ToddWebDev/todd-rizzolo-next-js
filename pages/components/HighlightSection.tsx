@@ -18,7 +18,7 @@ const Highlight = () => (
       </div>
     </div> */}
     <div className={styles.cards}>
-      <div className={styles.card}>
+      <div className={styles.card} style={{ maxWidth: '390px' }}>
         <i aria-hidden className='fas fa-circle-notch'></i>
         <h3>White Label Style Guide</h3>
         <p>A style guide build with white label theming in mind.</p>
