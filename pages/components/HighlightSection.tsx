@@ -32,11 +32,11 @@ const Highlight = () => (
         </ul>
         <div>
           <button
-            rel='noreferrer'
             onClick={() =>
               window.open(
                 'https://lendio-styleguide-tailwind.netlify.app',
-                '_blank'
+                '_blank',
+                'noopener'
               )
             }
           >

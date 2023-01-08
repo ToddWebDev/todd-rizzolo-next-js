@@ -18,9 +18,12 @@ const Projects = () => (
         </ul>
         <div>
           <button
-            rel='noreferrer'
             onClick={() =>
-              window.open('https://codesandbox.io/u/ToddWebDev', '_blank')
+              window.open(
+                'https://codesandbox.io/u/ToddWebDev',
+                '_blank',
+                'noopener'
+              )
             }
           >
             Visit <i aria-hidden className='fas fa-external-link-alt'></i>
@@ -37,9 +40,12 @@ const Projects = () => (
         </ul>
         <div>
           <button
-            rel='noreferrer'
             onClick={() =>
-              window.open('https://www.codepen.io/toddwebdev', '_blank')
+              window.open(
+                'https://www.codepen.io/toddwebdev',
+                '_blank',
+                'noopener'
+              )
             }
           >
             Visit <i aria-hidden className='fas fa-external-link-alt'></i>
@@ -56,9 +62,12 @@ const Projects = () => (
         </ul>
         <div>
           <button
-            rel='noreferrer'
             onClick={() =>
-              window.open('https://www.github.com/toddwebdev', '_blank')
+              window.open(
+                'https://www.github.com/toddwebdev',
+                '_blank',
+                'noopener'
+              )
             }
           >
             Visit <i aria-hidden className='fas fa-external-link-alt'></i>

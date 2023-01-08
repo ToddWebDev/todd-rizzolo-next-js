@@ -23,21 +23,24 @@ const Portfolio = () => (
         </ul>
         <div>
           <button
-            rel='noreferrer'
             onClick={() =>
-              window.open('https://ministrygrid.com/curriculum', '_blank')
+              window.open(
+                'https://ministrygrid.com/curriculum',
+                '_blank',
+                'noopener'
+              )
             }
           >
             Visit Marketing{' '}
             <i aria-hidden className='fas fa-external-link-alt'></i>
           </button>
           <button
-            rel='noreferrer'
             className='secondary'
             onClick={() =>
               window.open(
                 'https://ministrygrid.lifeway.com/#/bible-studies',
-                '_blank'
+                '_blank',
+                'noopener'
               )
             }
           >
@@ -59,19 +62,20 @@ const Portfolio = () => (
         </ul>
         <div>
           <button
-            rel='noreferrer'
-            onClick={() => window.open('https://ministrygrid.com/', '_blank')}
+            onClick={() =>
+              window.open('https://ministrygrid.com/', '_blank', 'noopener')
+            }
           >
             Visit Marketing{' '}
             <i aria-hidden className='fas fa-external-link-alt'></i>
           </button>
           <button
-            rel='noreferrer'
             className='secondary'
             onClick={() =>
               window.open(
                 'https://ministrygrid.lifeway.com/#/catalog',
-                '_blank'
+                '_blank',
+                'noopener'
               )
             }
           >
