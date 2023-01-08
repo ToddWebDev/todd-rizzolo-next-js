@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import Head from 'next/head'
-import useVH from 'react-viewport-height'
 import Layout from './components/Layout'
 import OverviewSection from './components/OverviewSection'
 import HighlightSection from './components/HighlightSection'
@@ -10,7 +9,6 @@ import PrototypesSection from './components/PrototypesSection'
 import ContactSection from './components/ContactSection'
 
 export default function Home() {
-  useVH()
   const [theme, toggleTheme] = useState('light')
 
   function scrollToTop() {
