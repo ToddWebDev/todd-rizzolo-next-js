@@ -14,7 +14,6 @@ export default function Layout({ children }) {
           triggered by Git. This site is blazing fast and secure. Yeah,
           it&apos;s pretty awesome.
         </p>
-        <a href='#'>View Site Performance</a>
       </div>
     </>
   )

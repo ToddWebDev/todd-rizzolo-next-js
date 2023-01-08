@@ -6,6 +6,7 @@ import OverviewSection from './components/OverviewSection'
 import HighlightSection from './components/HighlightSection'
 import PortfolioSection from './components/PortfolioSection'
 import ProjectsSection from './components/ProjectsSection'
+import PrototypesSection from './components/PrototypesSection'
 import ContactSection from './components/ContactSection'
 
 export default function Home() {
@@ -84,6 +85,7 @@ export default function Home() {
         <HighlightSection />
         <PortfolioSection />
         <ProjectsSection />
+        <PrototypesSection />
         <ContactSection />
         <section>
           <a href='#' onClick={(e) => scrollToTop()}>
