@@ -3,7 +3,7 @@ import styles from '../Components.module.css'
 
 const Projects = () => (
   <section>
-    <h2>My Projects</h2>
+    <h2>My Code</h2>
     <p>
       While much of the code I write for my employers is private, I do share
       examples of my code on these platforms.

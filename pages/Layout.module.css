@@ -65,11 +65,11 @@
 
 .image:after {
   position: absolute;
-  bottom: -46px;
+  bottom: -56px;
   left: 10px;
   content: '@toddwebdev';
   font-family: 'Vujahday Script', cursive;
-  font-size: 26px;
+  font-size: 32px;
   color: #222;
 }
 
