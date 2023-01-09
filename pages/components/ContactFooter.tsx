@@ -42,6 +42,7 @@ const SocialMediaFooter = () => (
           target='_blank'
           rel='noreferrer'
           className='icon'
+          aria-label='Codepen'
         >
           <span aria-hidden className='fab fa-codepen'></span>
         </a>

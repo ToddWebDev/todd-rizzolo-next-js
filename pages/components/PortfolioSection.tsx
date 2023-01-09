@@ -12,7 +12,7 @@ const Portfolio = () => (
       <div className={styles.card}>
         <i aria-hidden className='fas fa-bible'></i>
         <div style={{ display: 'flex', flexFlow: 'column-reverse' }}>
-          <h3 style={{ marginTop: '-10px' }}>Digital Curriculum</h3>
+          <h4 style={{ marginTop: '-10px' }}>Digital Curriculum</h4>
           <h5 style={{ margin: '0', color: `var(--text-color-medium)` }}>
             2020-2022
           </h5>
@@ -53,7 +53,7 @@ const Portfolio = () => (
       <div className={styles.card}>
         <i aria-hidden className='icomoon-ministryGrid'></i>
         <div style={{ display: 'flex', flexFlow: 'column-reverse' }}>
-          <h3 style={{ marginTop: '-10px' }}>Ministry Grid</h3>
+          <h4 style={{ marginTop: '-10px' }}>Ministry Grid</h4>
           <h5 style={{ margin: '0', color: `var(--text-color-medium)` }}>
             2017-2019
           </h5>
