@@ -11,10 +11,12 @@ const Portfolio = () => (
     <div className={styles.cards}>
       <div className={styles.card}>
         <i aria-hidden className='fas fa-bible'></i>
-        <h5 style={{ margin: '0', color: `var(--text-color-medium)` }}>
-          2020-2022
-        </h5>
-        <h3 style={{ marginTop: '0' }}>Digital Curriculum</h3>
+        <div style={{ display: 'flex', flexFlow: 'column-reverse' }}>
+          <h3 style={{ marginTop: '-10px' }}>Digital Curriculum</h3>
+          <h5 style={{ margin: '0', color: `var(--text-color-medium)` }}>
+            2020-2022
+          </h5>
+        </div>
         <p>A digital curriculum web app tailored for church leaders.</p>
         <ul>
           <li>React</li>
@@ -50,10 +52,12 @@ const Portfolio = () => (
       </div>
       <div className={styles.card}>
         <i aria-hidden className='icomoon-ministryGrid'></i>
-        <h5 style={{ margin: '0', color: `var(--text-color-medium)` }}>
-          2017-2019
-        </h5>
-        <h3 style={{ marginTop: '0' }}>Ministry Grid</h3>
+        <div style={{ display: 'flex', flexFlow: 'column-reverse' }}>
+          <h3 style={{ marginTop: '-10px' }}>Ministry Grid</h3>
+          <h5 style={{ margin: '0', color: `var(--text-color-medium)` }}>
+            2017-2019
+          </h5>
+        </div>
         <p>A training web app tailored for church leaders.</p>
         <ul>
           <li>React</li>

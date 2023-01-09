@@ -9,6 +9,7 @@ const SocialMediaFooter = () => (
           target='_blank'
           rel='noreferrer'
           className='icon'
+          aria-label='Github'
         >
           <span aria-hidden className='fab fa-github'></span>
         </a>
@@ -19,6 +20,7 @@ const SocialMediaFooter = () => (
           target='_blank'
           rel='noreferrer'
           className='icon'
+          aria-label='Instagram'
         >
           <span aria-hidden className='fab fa-instagram'></span>
         </a>
@@ -29,6 +31,7 @@ const SocialMediaFooter = () => (
           target='_blank'
           rel='noreferrer'
           className='icon'
+          aria-label='Twitter'
         >
           <span aria-hidden className='fab fa-twitter'></span>
         </a>
@@ -49,6 +52,7 @@ const SocialMediaFooter = () => (
           target='_blank'
           rel='noreferrer'
           className='icon'
+          aria-label='YouTube'
         >
           <span aria-hidden className='fab fa-youtube'></span>
         </a>
@@ -59,6 +63,7 @@ const SocialMediaFooter = () => (
           target='_blank'
           rel='noreferrer'
           className='icon'
+          aria-label='Linked In'
         >
           <span aria-hidden className='fab fa-linkedin'></span>
         </a>

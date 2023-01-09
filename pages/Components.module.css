@@ -32,6 +32,10 @@
   font-size: 3em;
 }
 
+.card h5 {
+  color: var(--text-color-medium);
+}
+
 .cards > .card ul,
 .smallCards > .card ul {
   gap: 0.5em;

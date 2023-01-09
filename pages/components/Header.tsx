@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
-import profilePic from '../images/JosuahTreeNP22.jpeg'
+import profilePic from '../images/JoshuaTreeNP22.jpeg'
 import styles from '../Layout.module.css'
 import ContactFooter from './ContactFooter'
 
@@ -37,9 +37,9 @@ const Header = () => {
           <br />
           User Interface Builder.
         </h2>
-        <h4>
+        <h3>
           <i aria-hidden className='fas fa-map-pin'></i> Salt Lake City, Utah
-        </h4>
+        </h3>
       </div>
       <ContactFooter />
     </header>
