@@ -37,7 +37,7 @@ const Header = () => {
           <br />
           User Interface Builder.
         </h2>
-        <h3>
+        <h3 style={{ fontSize: '1.17em' }}>
           <i aria-hidden className='fas fa-map-pin'></i> Salt Lake City, Utah
         </h3>
       </div>
