@@ -113,11 +113,12 @@ section + section {
 }
 
 footer {
+  text-align: center;
   background: var(--base-five);
   padding: 2em 1em;
 }
 
-footer > p {
+footer > * {
   max-width: 75ch;
 }
 
@@ -224,4 +225,12 @@ blockquote:before {
 
 .icomoon-ministryGrid:before {
   content: '\e901';
+}
+
+.CircularProgressbar-trail {
+  stroke: var(--base-four) !important;
+}
+
+.CircularProgressbar-path {
+  stroke: var(--primary-one) !important;
 }
