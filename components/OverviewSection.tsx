@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from '../Layout.module.css'
+import styles from './Layout.module.css'
 
 const Overview = () => {
   const [readMore, setReadMore] = useState(false)

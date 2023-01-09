@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import profilePic from '../images/JoshuaTreeNP22.jpeg'
-import styles from '../Layout.module.css'
+import styles from './Layout.module.css'
 import ContactFooter from './ContactFooter'
 
 const Header = () => {

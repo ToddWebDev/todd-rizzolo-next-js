@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Script from 'next/script'
-import Layout from './components/Layout'
-import OverviewSection from './components/OverviewSection'
-import HighlightSection from './components/HighlightSection'
-import PortfolioSection from './components/PortfolioSection'
-import ProjectsSection from './components/ProjectsSection'
-import PrototypesSection from './components/PrototypesSection'
-import ContactSection from './components/ContactSection'
+import Layout from '../components/Layout'
+import OverviewSection from '../components/OverviewSection'
+import HighlightSection from '../components/HighlightSection'
+import PortfolioSection from '../components/PortfolioSection'
+import ProjectsSection from '../components/ProjectsSection'
+import PrototypesSection from '../components/PrototypesSection'
+import ContactSection from '../components/ContactSection'
 
 export default function Home() {
   const [theme, toggleTheme] = useState('light')
