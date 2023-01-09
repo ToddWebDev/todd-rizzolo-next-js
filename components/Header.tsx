@@ -41,7 +41,10 @@ const Header = () => {
           <i aria-hidden className='fas fa-map-pin'></i> Salt Lake City, Utah
         </h3>
       </div>
-      <ContactFooter />
+      <div>
+        <ContactFooter />
+        <p style={{ margin: 0 }}>&copy; {new Date().getFullYear()}</p>
+      </div>
     </header>
   )
 }

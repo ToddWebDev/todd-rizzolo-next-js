@@ -96,7 +96,7 @@ section + section {
   margin-top: -3rem;
 }
 
-footer a {
+.social a {
   color: #c4d3dc;
   display: inline-block;
   padding: 0.5rem;
@@ -104,16 +104,21 @@ footer a {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-footer {
-  color: #c4d3dc;
-}
-
-footer ul {
+.social ul {
   list-style: none;
   display: flex;
   justify-content: center;
   font-size: 1.4rem;
   padding: 0;
+}
+
+footer {
+  background: var(--base-five);
+  padding: 2em 1em;
+}
+
+footer > p {
+  max-width: 75ch;
 }
 
 h1,

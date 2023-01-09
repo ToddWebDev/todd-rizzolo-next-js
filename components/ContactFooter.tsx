@@ -1,7 +1,7 @@
 import React from 'react'
 
 const SocialMediaFooter = () => (
-  <footer>
+  <div className='social'>
     <ul>
       <li>
         <a
@@ -70,8 +70,7 @@ const SocialMediaFooter = () => (
         </a>
       </li>
     </ul>
-    <p>&copy; {new Date().getFullYear()}</p>
-  </footer>
+  </div>
 )
 
 export default SocialMediaFooter

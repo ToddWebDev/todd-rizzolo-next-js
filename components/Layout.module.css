@@ -1,6 +1,6 @@
 /* Mobile First Layout */
 .header {
-  color: #fff;
+  color: #c4d3dc;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -117,15 +117,6 @@
   width: 100px;
   background: var(--base-five);
   content: '';
-}
-
-.footer {
-  background: var(--base-five);
-  padding: 2em 1em;
-}
-
-.footer > p {
-  max-width: 75ch;
 }
 
 /* Medium Layout */

@@ -7,14 +7,14 @@ export default function Layout({ children }) {
     <>
       <Header />
       <main className={styles.content}>{children}</main>
-      <div className={styles.footer}>
+      <footer className={styles.footer}>
         <p>
           This site is built with the Next JS. Next JS generates these files
           during the build process and Netlify provides continuous deployments
           triggered by Git. This site is blazing fast and secure. Yeah,
           it&apos;s pretty awesome.
         </p>
-      </div>
+      </footer>
     </>
   )
 }
