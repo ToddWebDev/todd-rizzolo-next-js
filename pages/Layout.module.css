@@ -156,12 +156,6 @@
   .content:before {
     display: none;
   }
-
-  .image:after {
-    bottom: -56px;
-    left: 10px;
-    font-size: 32px;
-  }
 }
 
 /* Extra Large Layout */
@@ -173,6 +167,11 @@
   .image {
     width: 370px;
     height: 424px;
+  }
+  .image:after {
+    bottom: -56px;
+    left: 10px;
+    font-size: 32px;
   }
   .image > img {
     width: 350px;
