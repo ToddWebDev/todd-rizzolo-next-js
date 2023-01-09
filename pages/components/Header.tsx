@@ -1,19 +1,16 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
+import profilePic from '../images/JosuahTreeNP22.jpeg'
 import styles from '../Layout.module.css'
 import ContactFooter from './ContactFooter'
 
 const Header = () => {
   const baseURL = 'https://api.github.com'
-  const [profilePic, setProfilePic] = useState()
 
   const fetchGithubData = async () =>
     await fetch(`${baseURL}/users/toddwebdev`)
       .then((res) => res.json())
-      .then((res) => {
-        console.log(res)
-        setProfilePic(res.avatar_url)
-      })
+      .then((res) => console.log(res))
       .catch((err) => console.error(err))
 
   React.useEffect(() => {
@@ -25,7 +22,7 @@ const Header = () => {
       <div>
         <div className={styles.image}>
           {profilePic && (
-            <img
+            <Image
               src={profilePic}
               alt='Profile Image'
               width='350'
