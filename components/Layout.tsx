@@ -56,8 +56,8 @@ export default function Layout({ children }) {
               }}
             >
               <div style={{ width: 50, height: 50, marginBottom: '0.5em' }}>
-                <CircularProgressbarWithChildren value={90}>
-                  {<h4>90</h4>}
+                <CircularProgressbarWithChildren value={100}>
+                  {<h4>100</h4>}
                 </CircularProgressbarWithChildren>
               </div>
               Best Practices
