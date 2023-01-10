@@ -4,7 +4,6 @@ import styles from './Layout.module.css'
 import { CircularProgressbarWithChildren } from 'react-circular-progressbar'
 
 export default function Layout({ children }) {
-  const performance = 93
   return (
     <>
       <Header />
