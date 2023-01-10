@@ -23,7 +23,7 @@ const Header = () => {
         <div className={styles.image}>
           {profilePic && (
             <Image
-              src={profilePic}
+              src='https://avatars.githubusercontent.com/u/7394764?v=4'
               alt='Profile Image'
               width='350'
               height='350'
