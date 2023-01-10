@@ -126,7 +126,7 @@
     align-items: end;
     position: fixed;
     text-align: right;
-    height: calc(var(--vh, 1vh) * 100);
+    height: var(--vh);
     width: 35%;
   }
 

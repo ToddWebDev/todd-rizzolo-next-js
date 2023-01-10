@@ -8,9 +8,11 @@ import PortfolioSection from '../components/PortfolioSection'
 import ProjectsSection from '../components/ProjectsSection'
 import PrototypesSection from '../components/PrototypesSection'
 import ContactSection from '../components/ContactSection'
+import useWindowSize from '../hooks/useWindowSize'
 
 export default function Home() {
   const [theme, toggleTheme] = useState('light')
+  const size = useWindowSize()
 
   function scrollToTop() {
     window.scrollTo({
@@ -28,6 +30,10 @@ export default function Home() {
     document.body.dataset.theme = theme
     window.localStorage.setItem('theme', theme)
   }, [theme])
+
+  useEffect(() => {
+    document.body.style.setProperty('--vh', `${size.height}px`)
+  }, [size])
 
   return (
     <>
