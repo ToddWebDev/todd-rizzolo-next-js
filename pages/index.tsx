@@ -4,6 +4,7 @@ import Script from 'next/script'
 import Layout from '../components/Layout'
 import OverviewSection from '../components/OverviewSection'
 import HighlightSection from '../components/HighlightSection'
+import RecentSection from '../components/RecentSection'
 import PortfolioSection from '../components/PortfolioSection'
 import ProjectsSection from '../components/ProjectsSection'
 import PrototypesSection from '../components/PrototypesSection'
@@ -85,6 +86,7 @@ export default function Home() {
         </div>
         <OverviewSection />
         <HighlightSection />
+        <RecentSection />
         <PortfolioSection />
         <ProjectsSection />
         <PrototypesSection />
