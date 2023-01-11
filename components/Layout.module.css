@@ -9,7 +9,6 @@
   position: relative;
   text-align: center;
   text-shadow: var(--text-shadow-dark);
-
   background-color: var(--black);
   background-attachment: scroll;
   background-image: linear-gradient(
@@ -126,7 +125,7 @@
     align-items: end;
     position: fixed;
     text-align: right;
-    height: var(--vh);
+    height: var(--vh, 1vh);
     width: 35%;
   }
 
