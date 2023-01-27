@@ -30,7 +30,7 @@ const Overview = () => {
         <li>Typescript</li>
         <li>Vue</li>
         <li>React</li>
-        <li>AngularJS</li>
+        <li>Angular</li>
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
         <li>NextJS</li>
