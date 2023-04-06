@@ -45,13 +45,13 @@ export default function Home() {
         <meta property='og:type' content='website' />
         <meta
           name='description'
-          content='Todd Rizzolo Web Developer Portfolio Website'
+          content='Todd Rizzolo Software Developer Portfolio Website'
         />
         <meta name='twitter:card' content='summary_large_image' />
-        <meta name='twitter:title' content='Todd Rizzolo • Web Developer' />
+        <meta name='twitter:title' content='Todd Rizzolo • Software Developer' />
         <meta
           name='twitter:description'
-          content='Todd Rizzolo Web Developer Portfolio Website'
+          content='Todd Rizzolo Software Developer Portfolio Website'
         />
         <link
           rel='apple-touch-icon'
