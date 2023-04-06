@@ -35,14 +35,16 @@ const Overview = () => {
         <li className={styles.listBreak}></li>
         <li>NextJS</li>
         <li>Gatsby</li>
-        <li>GraphQL</li>
-        <li>Accessibility</li>
+        <li>Laravel</li>
+        <li>PHP</li>
+        <li>SQL</li>
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
         <li>HTML</li>
         <li>CSS</li>
         <li>Tailwind</li>
         <li>Styled Components</li>
+        <li>Accessibility</li>
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
         <li>Design Systems</li>
