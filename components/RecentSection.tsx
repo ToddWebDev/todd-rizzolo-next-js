@@ -21,7 +21,7 @@ const Recent = () => (
           </h4>
         </div>
         <p>
-          A &lsquo;from-scratch&rsquo; style guide built with white label
+          A &lsquo;from-scratch&rsquo; style guide and component library built with white label
           theming in mind.
         </p>
         <ul>
