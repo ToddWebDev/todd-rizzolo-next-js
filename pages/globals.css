@@ -147,7 +147,8 @@ a:hover {
 }
 
 button {
-  background: var(--primary-one);
+  background: var(--primary-two);
+  background: linear-gradient(to right, var(--primary-two), var(--primary-two) 75%);
   color: #fff;
   border-radius: 4px;
   border: none;
@@ -161,7 +162,8 @@ button {
 
 button:hover {
   cursor: pointer;
-  background: var(--primary-two);
+  background: var(--primary-one);
+  background: linear-gradient(to right, var(--primary-two), var(--primary-one) 75%);
 }
 
 button:focus {
