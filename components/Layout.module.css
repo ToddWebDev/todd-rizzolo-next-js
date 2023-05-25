@@ -94,17 +94,13 @@
   margin: 0 0.5em 0.5em 0;
   border-radius: var(--border-radius);
 }
+
 .listFill {
-  flex-grow: 1;
-  opacity: 0.3;
+  display: none;
 }
 
 .listBreak {
-  flex-basis: 100%;
-  height: 0 !important;
-  border: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
+  display: none;
 }
 
 .content:before {
@@ -146,6 +142,21 @@
 
   .content:before {
     display: none;
+  }
+  
+  .listFill {
+    display: flex;
+    flex-grow: 1;
+    opacity: 0.3;
+  }
+  
+  .listBreak {
+    display: flex;
+    flex-basis: 100%;
+    height: 0 !important;
+    border: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
 

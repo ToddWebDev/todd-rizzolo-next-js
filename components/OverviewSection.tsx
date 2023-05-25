@@ -31,26 +31,27 @@ const Overview = () => {
         <li>Vue</li>
         <li>React</li>
         <li>Angular</li>
+        <li>Next.js</li>
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
-        <li>NextJS</li>
-        <li>Gatsby</li>
+        <li>APIs</li>
+        <li>Express</li>
+        <li>Docker</li>
         <li>Laravel</li>
         <li>PHP</li>
-        <li>SQL</li>
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
         <li>HTML</li>
         <li>CSS</li>
         <li>Tailwind</li>
         <li>Styled Components</li>
-        <li>Accessibility</li>
+        <li>Web Accessibility</li>
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
-        <li>Design Systems</li>
+        <li>Testing</li>
+        <li>CI/CD</li>
+        <li>Style Guides</li>
         <li>User Interface Design</li>
-        <li>UX</li>
-        <li>Wireframes</li>
         <li>Prototyping</li>
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
