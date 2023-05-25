@@ -58,7 +58,7 @@ const Recent = () => (
           </h4>
         </div>
         <p>
-          An interactive travel log built with the MapBox api.
+          An interactive travel log built with the MapBox API.
         </p>
         <ul>
           <li>Javascript</li>
