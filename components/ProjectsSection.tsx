@@ -9,6 +9,28 @@ const Projects = () => (
       examples of my code on these platforms.
     </p>
     <div className={styles.smallCards}>
+    <div className={styles.card}>
+        <i aria-hidden className='fab fa-github small'></i>
+        <h3>GitHub</h3>
+        <ul>
+          <li>Web Apps</li>
+          <li>APIs</li>
+          <li>Testing</li>
+        </ul>
+        <div>
+          <button
+            onClick={() =>
+              window.open(
+                'https://www.github.com/toddwebdev',
+                '_blank',
+                'noopener'
+              )
+            }
+          >
+            Visit <i aria-hidden className='fas fa-external-link-alt'></i>
+          </button>
+        </div>
+      </div>
       <div className={styles.card}>
         <i aria-hidden className='fas fa-laptop-code small'></i>
         <h3>Code Sandbox</h3>
@@ -43,28 +65,6 @@ const Projects = () => (
             onClick={() =>
               window.open(
                 'https://www.codepen.io/toddwebdev',
-                '_blank',
-                'noopener'
-              )
-            }
-          >
-            Visit <i aria-hidden className='fas fa-external-link-alt'></i>
-          </button>
-        </div>
-      </div>
-      <div className={styles.card}>
-        <i aria-hidden className='fab fa-github small'></i>
-        <h3>GitHub</h3>
-        <ul>
-          <li>React</li>
-          <li>Javascript</li>
-          <li>Webpack</li>
-        </ul>
-        <div>
-          <button
-            onClick={() =>
-              window.open(
-                'https://www.github.com/toddwebdev',
                 '_blank',
                 'noopener'
               )
