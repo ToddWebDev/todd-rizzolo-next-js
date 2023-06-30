@@ -43,7 +43,7 @@ export default function Home() {
         <link rel='canonical' href='https://www.toddrizzolo.com' />
         <meta name='theme-color' content='#164c69' />
         <meta property='og:type' content='website' />
-        <meta property='og:image' content='/LendioStyleGuide.jpg'></meta>
+        <meta property='og:image' content='https://www.toddrizzolo.com/LendioStyleGuide.jpg'></meta>
         <meta name='description' content='Todd Rizzolo Software Developer Portfolio Website' />
         <meta name='twitter:card' content='summary_large_image' />
         <meta name='twitter:title' content='Todd Rizzolo • Software Developer' />
