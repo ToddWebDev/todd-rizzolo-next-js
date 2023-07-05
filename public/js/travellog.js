@@ -2495,6 +2495,162 @@ const golf_courses = {
   ],
 }
 
+const camp_sites = {
+  type: 'FeatureCollection',
+  features: [
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-110.61352640299253, 43.84144296660591],
+      },
+      properties: {
+        type: 'camping',
+        mode: 'recreation',
+        date: '2021-06-19',
+        destination: 'Signal Mountain Campground',
+        city: 'Moran',
+        state: 'Wyoming',
+      },
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-111.40062706310238, 40.197789391243575],
+      },
+      properties: {
+        type: 'camping',
+        mode: 'recreation',
+        date: '2021-07-02',
+        destination: 'Balsam Campground',
+        city: 'Springville',
+        state: 'Utah',
+      },
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-111.61853344445933, 40.57769381880697],
+      },
+      properties: {
+        type: 'camping',
+        mode: 'recreation',
+        date: '2021-07-09',
+        destination: 'Albion Basin Campground',
+        city: 'Alta',
+        state: 'Utah',
+      },
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-109.41088910527918, 37.73568071407479],
+      },
+      properties: {
+        type: 'camping',
+        mode: 'recreation',
+        date: '2021-08-06',
+        destination: 'Devils Canyon Campground',
+        city: 'Monticello',
+        state: 'Utah',
+      },
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-111.59326469244432, 40.41345337075616],
+      },
+      properties: {
+        type: 'camping',
+        mode: 'recreation',
+        date: '2021-08-13',
+        destination: 'Mt Timpanogos Campground',
+        city: 'Provo',
+        state: 'Utah',
+      },
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-112.98714389512884, 37.19653901760028],
+      },
+      properties: {
+        type: 'camping',
+        mode: 'recreation',
+        date: '2022-05-20',
+        destination: 'Watchman Campground',
+        city: 'Springdale',
+        state: 'Utah',
+      },
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-112.57126673045542, 40.49530152916898],
+      },
+      properties: {
+        type: 'camping',
+        mode: 'recreation',
+        date: '2022-06-10',
+        destination: 'Boy Scout Campground',
+        city: 'Dugway',
+        state: 'Utah',
+      },
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-111.24854009732222, 38.28219310811831],
+      },
+      properties: {
+        type: 'camping',
+        mode: 'recreation',
+        date: '2022-07-01',
+        destination: 'Fruita Campground',
+        city: 'Torrey',
+        state: 'Utah',
+      },
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-111.10643900894918, 40.76905303371195],
+      },
+      properties: {
+        type: 'camping',
+        mode: 'recreation',
+        date: '2022-07-15',
+        destination: 'Smith & Morehouse Campground',
+        city: 'Kamas',
+        state: 'Utah',
+      },
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-111.17031526903718, 40.17815624705916],
+      },
+      properties: {
+        type: 'camping',
+        mode: 'recreation',
+        date: '2023-07-02',
+        destination: 'Strawberry Bay Campground',
+        city: 'Heber City',
+        state: 'Utah',
+      },
+    },
+  ],
+}
+
 const national_parks = {}
 
 // A simple line from origin to destination.
@@ -2642,8 +2798,9 @@ function buildLogsList(year) {
 }
 
 function buildAllLogs() {
-  addHTMLMarkers(ski_resorts.features)
   addHTMLMarkers(golf_courses.features)
+  addHTMLMarkers(camp_sites.features)
+  addHTMLMarkers(ski_resorts.features)
   let sortedLogs = logs.sort((a, b) => b.year - a.year)
   sortedLogs.forEach((log) => {
     sortedFeatures = log.features.sort((a, b) => new Date(b.properties.date) - new Date(a.properties.date))
@@ -2674,6 +2831,8 @@ function addHTMLMarkers(features, color) {
         ? 'marker marker-scenic-point'
         : feature.properties.type === 'alpine-skiing'
         ? 'marker marker-alpine-skiing'
+        : feature.properties.type === 'camping'
+        ? 'marker marker-camp-site'
         : 'marker'
 
     /**
