@@ -41,11 +41,10 @@ const Overview = () => {
         <li>PHP</li>
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
-        <li>HTML</li>
-        <li>CSS</li>
+        <li>Web Accessibility</li>
+        <li>HTML/CSS</li>
         <li>Tailwind</li>
         <li>Styled Components</li>
-        <li>Web Accessibility</li>
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
         <li>Testing</li>
