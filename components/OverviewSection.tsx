@@ -35,6 +35,7 @@ const Overview = () => {
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
         <li>APIs</li>
+        <li>Node</li>
         <li>Express</li>
         <li>Docker</li>
         <li>Laravel</li>
@@ -42,7 +43,8 @@ const Overview = () => {
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
         <li>Web Accessibility</li>
-        <li>HTML/CSS</li>
+        <li>HTML</li>
+        <li>CSS</li>
         <li>Tailwind</li>
         <li>Styled Components</li>
         <li className={styles.listFill}>&nbsp;</li>
