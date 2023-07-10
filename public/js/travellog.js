@@ -1,4 +1,5 @@
-mapboxgl.accessToken = 'pk.eyJ1IjoidG9kZHdlYmRldiIsImEiOiJjanlidjVoMHQwYjBqM2RvY2poMGFwc3l0In0.sLNe9kgTJ5pAwrzTc9_5cQ'
+mapboxgl.accessToken =
+  'pk.eyJ1IjoidG9kZHdlYmRldiIsImEiOiJjanlidjVoMHQwYjBqM2RvY2poMGFwc3l0In0.sLNe9kgTJ5pAwrzTc9_5cQ'
 
 const origin = [-111.8999, 40.6111] //SLC
 // const origin = [-82.9988, 39.9612] //Ohio
@@ -364,24 +365,49 @@ const logs = [
         type: 'Feature',
         geometry: {
           type: 'Point',
-          coordinates: origin,
+          coordinates: [-106.1516265, 39.501419],
         },
         pan: {
-          coordinates: [-98.01268789361775, 40.91657654933087],
-          zoom: calcViewportZoom(5.25),
+          coordinates: [-95.15246968270525, 40.04551423560155],
+          zoom: calcViewportZoom(5.5),
         },
         start: {
           coordinates: [-84.2333, 39.5523],
         },
         properties: {
+          type: 'alpine-skiing',
           mode: 'driving',
           month: 'January',
           year: 2019,
-          date: '2019-01-01',
+          date: '2019-01-03',
           departure: 'Springboro',
+          destination: 'Copper Mountain',
+          state: 'Colorado',
+          distance: 1294,
+        },
+      },
+      {
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: origin,
+        },
+        pan: {
+          coordinates: [-108.99084293346324, 40.08956281212634],
+          zoom: calcViewportZoom(7.25),
+        },
+        start: {
+          coordinates: [-106.1516265, 39.501419],
+        },
+        properties: {
+          mode: 'driving',
+          month: 'January',
+          year: 2019,
+          date: '2019-01-05',
+          departure: 'Copper Mountain',
           destination: 'Salt Lake City',
           state: 'Utah',
-          distance: 2347,
+          distance: 440,
         },
       },
       {
@@ -1791,21 +1817,6 @@ const ski_resorts = {
       type: 'Feature',
       geometry: {
         type: 'Point',
-        coordinates: [-106.1516265, 39.501419],
-      },
-      properties: {
-        type: 'alpine-skiing',
-        mode: 'recreation',
-        date: '2019-01-04',
-        destination: 'Copper Mountain',
-        city: 'Copper Mountain',
-        state: 'Colorado',
-      },
-    },
-    {
-      type: 'Feature',
-      geometry: {
-        type: 'Point',
         coordinates: [-107.8123, 37.9375],
       },
       properties: {
@@ -2938,7 +2949,8 @@ function buildLogsList(year) {
 
     const label = logLI.appendChild(document.createElement('p'))
     label.className = 'label'
-    label.innerHTML = log.properties.mode === 'home' ? 'home' : log.properties.month
+    label.innerHTML =
+      log.properties.mode === 'home' ? 'home' : log.properties.month
 
     const link = logLI.appendChild(document.createElement('a'))
     link.href = '#'
@@ -2955,7 +2967,10 @@ function buildLogsList(year) {
         if (this.id === `link-${feature.properties.id}`) {
           flyToCoordinates(feature.pan.coordinates, feature.pan.zoom)
           createPopUp(feature)
-          if (feature.properties.mode === 'driving' || feature.properties.mode === 'train') {
+          if (
+            feature.properties.mode === 'driving' ||
+            feature.properties.mode === 'train'
+          ) {
             addRoute(feature.start.coordinates, feature.geometry.coordinates)
           }
           if (feature.properties.mode === 'flight') {
@@ -2978,7 +2993,9 @@ function buildAllLogs() {
   addHTMLMarkers(ski_resorts.features)
   let sortedLogs = logs.sort((a, b) => b.year - a.year)
   sortedLogs.forEach((log) => {
-    sortedFeatures = log.features.sort((a, b) => new Date(b.properties.date) - new Date(a.properties.date))
+    sortedFeatures = log.features.sort(
+      (a, b) => new Date(b.properties.date) - new Date(a.properties.date)
+    )
     return sortedFeatures
   })
   sortedLogs.forEach((year) => {
@@ -3014,10 +3031,13 @@ function addHTMLMarkers(features) {
      * Create a marker using the div element
      * defined above and add it to the map.
      **/
-    new mapboxgl.Marker(el, { offset: [0, -25] }).setLngLat(feature.geometry.coordinates).addTo(map)
+    new mapboxgl.Marker(el, { offset: [0, -25] })
+      .setLngLat(feature.geometry.coordinates)
+      .addTo(map)
 
     el.addEventListener('click', (e) => {
       resetMap()
+      removeActiveListing()
       /* Fly to the point */
       if (feature.properties.mode !== 'recreation') {
         flyToCoordinates(feature.pan.coordinates, feature.pan.zoom)
@@ -3026,7 +3046,10 @@ function addHTMLMarkers(features) {
       }
       /* Close all other popups and display popup for clicked store */
       createPopUp(feature)
-      if (feature.properties.mode === 'driving' || feature.properties.mode === 'train') {
+      if (
+        feature.properties.mode === 'driving' ||
+        feature.properties.mode === 'train'
+      ) {
         addRoute(feature.start.coordinates, feature.geometry.coordinates)
       }
       if (feature.properties.mode === 'flight') {
@@ -3034,13 +3057,11 @@ function addHTMLMarkers(features) {
       }
       if (feature.properties.mode !== 'recreation') {
         /* Highlight listing in sidebar */
-        const activeItem = document.getElementsByClassName('active')
-        e.stopPropagation()
-        if (activeItem[0]) {
-          activeItem[0].classList.remove('active')
-        }
-        const listing = document.getElementById(`listing-${feature.properties.id}`)
+        const listing = document.getElementById(
+          `listing-${feature.properties.id}`
+        )
         listing.classList.add('active')
+        listing.scrollIntoView({ behavior: 'smooth', block: 'center' })
       }
     })
   }
@@ -3050,7 +3071,9 @@ function removeHTMLMarkers(features) {
   /* For each feature in the GeoJSON object above: */
   for (const [index, feature] of features.entries()) {
     // Get the element by its ID
-    const element = document.getElementById(`marker-${feature.properties.type}-${feature.properties.mode}-${index}`)
+    const element = document.getElementById(
+      `marker-${feature.properties.type}-${feature.properties.mode}-${index}`
+    )
 
     // Check if the element exists
     if (element) {
@@ -3182,8 +3205,14 @@ function addFlight(start, destination) {
   })
 
   function animate() {
-    const start = route.features[0].geometry.coordinates[counter >= steps ? counter - 1 : counter]
-    const end = route.features[0].geometry.coordinates[counter >= steps ? counter : counter + 1]
+    const start =
+      route.features[0].geometry.coordinates[
+        counter >= steps ? counter - 1 : counter
+      ]
+    const end =
+      route.features[0].geometry.coordinates[
+        counter >= steps ? counter : counter + 1
+      ]
     if (!start) return
     if (!end) {
       setTimeout(() => {
@@ -3194,12 +3223,16 @@ function addFlight(start, destination) {
 
     // Update point geometry to a new position based on counter denoting
     // the index to access the arc
-    point.features[0].geometry.coordinates = route.features[0].geometry.coordinates[counter]
+    point.features[0].geometry.coordinates =
+      route.features[0].geometry.coordinates[counter]
 
     // Calculate the bearing to ensure the icon is rotated to match the route arc
     // The bearing is calculated between the current point and the next point, except
     // at the end of the arc, which uses the previous point and the current point
-    point.features[0].properties.bearing = turf.bearing(turf.point(start), turf.point(end))
+    point.features[0].properties.bearing = turf.bearing(
+      turf.point(start),
+      turf.point(end)
+    )
 
     // Update the source with this new data
     map.getSource('point').setData(point)
@@ -3223,15 +3256,25 @@ function flyToCoordinates(coordinates, zoom) {
 
 function showTravelProperties(properties) {
   const date = new Date(properties.date)
-  return `<h2>${properties.destination}, ${properties.state ? properties.state : properties.country}</h2>
-  ${properties.description ? `<p class="description">${properties.description}</p>` : ''}<p>${
+  return `<h2>${properties.destination}, ${
+    properties.state ? properties.state : properties.country
+  }</h2>
+  ${
+    properties.description
+      ? `<p class="description">${properties.description}</p>`
+      : ''
+  }<p>${
     properties.mode === 'driving'
       ? `<i class="fas fa-car"></i>`
       : properties.mode === 'train'
       ? `<i class="fas fa-train"></i>`
       : `<i class="fas fa-plane"></i>`
   } ${properties.distance + ' miles'}</p>
-  ${properties.departure ? `<p><i class="fas fa-location-pin"></i> ${properties.departure}</p>` : ''}
+  ${
+    properties.departure
+      ? `<p><i class="fas fa-location-pin"></i> ${properties.departure}</p>`
+      : ''
+  }
   <p class="date">${date.toLocaleString('en-US', {
     dateStyle: 'long',
   })}</p>`
@@ -3239,8 +3282,14 @@ function showTravelProperties(properties) {
 
 function showRecreationProperties(properties) {
   const date = properties.date ? new Date(properties.date) : null
-  return `<h2>${properties.destination}</h2><p>${properties.city}, ${properties.state}</p>
-  ${properties.description ? `<p class="description">${properties.description}</p>` : ''}
+  return `<h2>${properties.destination}</h2><p>${properties.city}, ${
+    properties.state
+  }</p>
+  ${
+    properties.description
+      ? `<p class="description">${properties.description}</p>`
+      : ''
+  }
   ${
     date !== null
       ? `<p class="date">${date.toLocaleString('en-US', {
@@ -3270,5 +3319,13 @@ function createPopUp(currentFeature) {
 
   popup.on('close', function (e) {
     resetMap()
+    removeActiveListing()
   })
+}
+
+function removeActiveListing() {
+  const activeItem = document.getElementsByClassName('active')
+  if (activeItem[0]) {
+    activeItem[0].classList.remove('active')
+  }
 }
