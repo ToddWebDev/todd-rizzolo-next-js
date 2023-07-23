@@ -1,28 +1,47 @@
 import React, { useState } from 'react'
 import styles from './Layout.module.css'
 
+function TextWithReadMore({ text }) {
+  const paragraphs = text.split(/\n\s*\n/) // Split text into paragraphs based on double line breaks
+  const [showFullText, setShowFullText] = useState(false)
+
+  // Render each paragraph as a separate <p> element
+  const displayText = paragraphs.map((paragraph, index) => (
+    <p className='lead' key={index}>
+      {paragraph}
+    </p>
+  ))
+
+  return (
+    <div>
+      {displayText.slice(0, showFullText ? undefined : 1)}{' '}
+      {/* Show only the first paragraph */}
+      {!showFullText && (
+        <a href='#' onClick={(e) => setShowFullText(true)}>
+          Read More
+        </a>
+      )}
+    </div>
+  )
+}
+
 const Overview = () => {
-  const [readMore, setReadMore] = useState(false)
+  const descriptionText = `As a skilled and versatile full stack software developer with a strong background in UX, I am confident that I would be an excellent fit for your remote or hybrid team. With my expertise in creating seamless user experiences and my proficiency in modern front-end technologies, I am well-equipped to contribute to your company's success.
+  
+    With over 7 years of experience in software development, I have honed my skills in building robust and scalable front-end applications. My proficiency in HTML, CSS, and JavaScript, along with my familiarity with popular frameworks like React and Vue, enables me to develop intuitive and visually appealing user interfaces.
+    
+    Additionally, my moderate experience building RESTful API’s and proficiency in databases and data storage make me a well rounded full stack developer. I am also familiar with web security best practices and continuous integration and continuous deployment (CI/CD) practices.
+    
+    What sets me apart is my deep understanding of UX principles and my ability to empathize with users to create meaningful interactions. I have a track record of collaborating closely with designers and stakeholders to translate wireframes and prototypes into polished user interfaces that prioritize usability and accessibility.
+    
+    I thrive in remote or hybrid work environments, leveraging effective communication and collaboration tools to ensure seamless teamwork and project coordination. I am highly self-motivated, disciplined, and capable of managing my time efficiently to deliver high-quality work within deadlines.
+    
+    Furthermore, my adaptability and willingness to learn make me well-suited for a dynamic industry like software development. I stay updated with the latest trends and emerging technologies in the front-end space, allowing me to bring innovative solutions to the table.`
 
-  const descriptionText =
-    "I'm a software developer with a strong focus on javascript, user interface design and implementation. I help conceptualize, facilitate, design, prototype and build digital products. My experience includes writing functional, well thought-out and production-ready code, that is unit tested and meets the design requirements of detailed prototypes and mockups. I'm a self starter, a team player and have many years of experience working in a scrum and agile oriented system. I have strong communication skills, enjoy solving complex problems and most of all, I enjoy building great digital products."
-
-  const handleClick = (e) => {
-    e.preventDefault()
-    setReadMore(true)
-  }
   return (
     <section>
       <h2>Software Developer</h2>
-      <blockquote>
-        {readMore ? descriptionText : descriptionText.slice(0, 331) + '...'}
-        <br />
-        {!readMore && (
-          <a href='#' onClick={(e) => handleClick(e)}>
-            Read More
-          </a>
-        )}
-      </blockquote>
+      <TextWithReadMore text={descriptionText} />
 
       <h3>Toolbox</h3>
       <ul>
@@ -42,6 +61,13 @@ const Overview = () => {
         <li>PHP</li>
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
+        <li>Web Security</li>
+        <li>OAuth</li>
+        <li>Testing</li>
+        <li>CI/CD</li>
+        <li>Debugging</li>
+        <li className={styles.listFill}>&nbsp;</li>
+        <li className={styles.listBreak}></li>
         <li>Web Accessibility</li>
         <li>HTML</li>
         <li>CSS</li>
@@ -49,11 +75,11 @@ const Overview = () => {
         <li>Styled Components</li>
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
-        <li>Testing</li>
-        <li>CI/CD</li>
+        <li>Component Libraries</li>
         <li>Style Guides</li>
-        <li>User Interface Design</li>
-        <li>Prototyping</li>
+        <li>UX/UI</li>
+        <li>Responsive Layouts</li>
+        <li>Figma</li>
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
       </ul>
