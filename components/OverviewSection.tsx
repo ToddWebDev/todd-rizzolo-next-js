@@ -42,6 +42,13 @@ const Overview = () => {
         <li>PHP</li>
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
+        <li>Web Security</li>
+        <li>OAuth</li>
+        <li>Testing</li>
+        <li>CI/CD</li>
+        <li>Debugging</li>
+        <li className={styles.listFill}>&nbsp;</li>
+        <li className={styles.listBreak}></li>
         <li>Web Accessibility</li>
         <li>HTML</li>
         <li>CSS</li>
@@ -49,11 +56,11 @@ const Overview = () => {
         <li>Styled Components</li>
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
-        <li>Testing</li>
-        <li>CI/CD</li>
+        <li>Component Libraries</li>
         <li>Style Guides</li>
-        <li>User Interface Design</li>
-        <li>Prototyping</li>
+        <li>UX/UI</li>
+        <li>Responsive Layouts</li>
+        <li>Figma</li>
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
       </ul>
