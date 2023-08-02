@@ -3,16 +3,6 @@ import React from 'react'
 const SocialMediaFooter = () => (
   <div className='social'>
     <ul>
-    <li>
-        <a
-          href='ToddRizzoloResumeSoftwareEngineer.pdf'
-          download
-          className='icon'
-          aria-label='Download Resume'
-        >
-          <span aria-hidden className='fas fa-download'></span>
-        </a>
-      </li>
       <li>
         <a
           href='https://www.github.com/toddwebdev'
