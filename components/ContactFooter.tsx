@@ -16,7 +16,7 @@ const SocialMediaFooter = () => (
       </li>
       <li>
         <a
-          href='https://www.instagram.com/toddwebdev'
+          href='https://www.instagram.com/tarizzolo'
           target='_blank'
           rel='noreferrer'
           className='icon'
