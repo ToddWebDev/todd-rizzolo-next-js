@@ -1732,6 +1732,58 @@ const logs = [
           distance: 380,
         },
       },
+      {
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [-106.817535, 39.191097],
+        },
+        pan: {
+          coordinates: [-109.34253441613107, 39.931679796316054],
+          zoom: calcViewportZoom(6.75),
+        },
+        start: {
+          coordinates: origin,
+        },
+        properties: {
+          type: 'alpine-skiing',
+          mode: 'driving',
+          month: 'January',
+          year: 2024,
+          date: '2024-01-12',
+          departure: 'Salt Lake City',
+          destination: 'Aspen',
+          description: 'Upcoming Trip',
+          state: 'Colorado',
+          distance: 400,
+        },
+      },
+      {
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [-111.308, 45.2618],
+        },
+        pan: {
+          coordinates: [-111.61631320982994, 42.9275291487858],
+          zoom: calcViewportZoom(6.75),
+        },
+        start: {
+          coordinates: origin,
+        },
+        properties: {
+          type: 'alpine-skiing',
+          mode: 'driving',
+          month: 'February',
+          year: 2024,
+          date: '2024-02-21',
+          departure: 'Salt Lake City',
+          destination: 'Big Sky',
+          description: 'Upcoming Trip',
+          state: 'Montana',
+          distance: 381,
+        },
+      },
     ],
   },
 ]
@@ -2781,7 +2833,7 @@ const camp_sites = {
       properties: {
         type: 'camping',
         mode: 'recreation',
-        date: '2022-08-07',
+        date: '2023-08-07',
         destination: 'Smith & Morehouse Campground',
         city: 'Kamas',
         state: 'Utah',
