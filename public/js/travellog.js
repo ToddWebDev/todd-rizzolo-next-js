@@ -1675,32 +1675,32 @@ const logs = [
           distance: 275,
         },
       },
-      {
-        type: 'Feature',
-        geometry: {
-          type: 'Point',
-          coordinates: [-114.2634, 38.93],
-        },
-        pan: {
-          coordinates: [-113.09135592718418, 39.77990446782528],
-          zoom: calcViewportZoom(8),
-        },
-        start: {
-          coordinates: origin,
-        },
-        properties: {
-          type: 'national-park',
-          mode: 'driving',
-          month: 'October',
-          year: 2023,
-          date: '2023-10-15',
-          departure: 'Salt Lake City',
-          destination: 'Great Basin National Park',
-          description: 'Upcoming Trip',
-          state: 'Nevada',
-          distance: 275,
-        },
-      },
+      // {
+      //   type: 'Feature',
+      //   geometry: {
+      //     type: 'Point',
+      //     coordinates: [-114.2634, 38.93],
+      //   },
+      //   pan: {
+      //     coordinates: [-113.09135592718418, 39.77990446782528],
+      //     zoom: calcViewportZoom(8),
+      //   },
+      //   start: {
+      //     coordinates: origin,
+      //   },
+      //   properties: {
+      //     type: 'national-park',
+      //     mode: 'driving',
+      //     month: 'October',
+      //     year: 2024,
+      //     date: '2024-10-15',
+      //     departure: 'Salt Lake City',
+      //     destination: 'Great Basin National Park',
+      //     description: 'Upcoming Trip',
+      //     state: 'Nevada',
+      //     distance: 275,
+      //   },
+      // },
     ],
   },
   {
@@ -1736,32 +1736,6 @@ const logs = [
         type: 'Feature',
         geometry: {
           type: 'Point',
-          coordinates: [-106.817535, 39.191097],
-        },
-        pan: {
-          coordinates: [-109.34253441613107, 39.931679796316054],
-          zoom: calcViewportZoom(6.75),
-        },
-        start: {
-          coordinates: origin,
-        },
-        properties: {
-          type: 'alpine-skiing',
-          mode: 'driving',
-          month: 'January',
-          year: 2024,
-          date: '2024-01-12',
-          departure: 'Salt Lake City',
-          destination: 'Aspen',
-          description: 'Upcoming Trip',
-          state: 'Colorado',
-          distance: 400,
-        },
-      },
-      {
-        type: 'Feature',
-        geometry: {
-          type: 'Point',
           coordinates: [-111.308, 45.2618],
         },
         pan: {
@@ -1774,14 +1748,40 @@ const logs = [
         properties: {
           type: 'alpine-skiing',
           mode: 'driving',
-          month: 'February',
+          month: 'January',
           year: 2024,
-          date: '2024-02-21',
+          date: '2024-01-20',
           departure: 'Salt Lake City',
           destination: 'Big Sky',
           description: 'Upcoming Trip',
           state: 'Montana',
           distance: 381,
+        },
+      },
+      {
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [-106.817535, 39.191097],
+        },
+        pan: {
+          coordinates: [-109.34253441613107, 39.931679796316054],
+          zoom: calcViewportZoom(6.75),
+        },
+        start: {
+          coordinates: origin,
+        },
+        properties: {
+          type: 'alpine-skiing',
+          mode: 'driving',
+          month: 'February',
+          year: 2024,
+          date: '2024-02-28',
+          departure: 'Salt Lake City',
+          destination: 'Aspen',
+          description: 'Upcoming Trip',
+          state: 'Colorado',
+          distance: 400,
         },
       },
     ],
