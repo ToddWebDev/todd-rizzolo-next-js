@@ -1988,7 +1988,7 @@ const ski_resorts = {
       properties: {
         type: 'alpine-skiing',
         mode: 'recreation',
-        description: '10+ days',
+        description: '15+ days',
         destination: 'Brighton Ski Area',
         city: 'Brighton',
         state: 'Utah',
@@ -2003,7 +2003,7 @@ const ski_resorts = {
       properties: {
         type: 'alpine-skiing',
         mode: 'recreation',
-        description: '10+ days',
+        description: '15+ days',
         destination: 'Solitude Ski Area',
         city: 'Solitude',
         state: 'Utah',
@@ -2018,7 +2018,7 @@ const ski_resorts = {
       properties: {
         type: 'alpine-skiing',
         mode: 'recreation',
-        description: '10+ days',
+        description: '15+ days',
         destination: 'Deer Valley Resort',
         city: 'Park City',
         state: 'Utah',
@@ -2048,7 +2048,7 @@ const ski_resorts = {
       properties: {
         type: 'alpine-skiing',
         mode: 'recreation',
-        description: '7 days',
+        description: '15+ days',
         destination: 'Snowbasin Resort',
         city: 'Huntsville',
         state: 'Utah',
