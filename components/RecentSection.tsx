@@ -7,9 +7,9 @@ const Recent = () => (
     <p>My latest design and development work.</p>
     <div className={styles.cards}>
       <div className={styles.card} style={{ maxWidth: '390px' }}>
-        <i aria-hidden className='fas fa-compass'></i>
+        <i aria-hidden className='fas fa-university'></i>
         <div style={{ display: 'flex', flexFlow: 'column-reverse' }}>
-          <h3 style={{ marginTop: '-0.75em' }}>White Label Style Guide</h3>
+          <h3 style={{ marginTop: '-0.75em' }}>VA.gov</h3>
           <h4
             style={{
               fontSize: '0.75em',
@@ -17,29 +17,26 @@ const Recent = () => (
               color: `var(--text-color-medium)`,
             }}
           >
-            2023
+            2024
           </h4>
         </div>
         <p>
-          A &lsquo;from-scratch&rsquo; style guide and component library built with white label
-          theming in mind for Lendio SaaS products.
+          The Veterans Pension Benefits application for the U.S. Department of
+          Veterans Affairs.
         </p>
         <ul>
-          <li>Vue</li>
-          <li>Tailwind CSS</li>
-          <li>UX/UI</li>
+          <li>VA Forms Library</li>
+          <li>Javascript</li>
+          <li>API</li>
         </ul>
         <div>
           <button
             onClick={() =>
-              window.open(
-                'https://lendio-styleguide-tailwind.netlify.app',
-                '_blank',
-                'noopener'
-              )
+              window.open('https://www.va.gov', '_blank', 'noopener')
             }
           >
-            Visit Guide <i aria-hidden className='fas fa-external-link-alt'></i>
+            Visit VA.gov{' '}
+            <i aria-hidden className='fas fa-external-link-alt'></i>
           </button>
         </div>
       </div>
@@ -54,12 +51,10 @@ const Recent = () => (
               color: `var(--text-color-medium)`,
             }}
           >
-            2023
+            2024-2023
           </h4>
         </div>
-        <p>
-          An interactive travel log built with the MapBox API.
-        </p>
+        <p>An interactive travel log built with the MapBox API.</p>
         <ul>
           <li>Javascript</li>
           <li>API</li>
@@ -75,7 +70,8 @@ const Recent = () => (
               )
             }
           >
-            Visit Travel Log <i aria-hidden className='fas fa-external-link-alt'></i>
+            Visit Travel Log{' '}
+            <i aria-hidden className='fas fa-external-link-alt'></i>
           </button>
         </div>
       </div>

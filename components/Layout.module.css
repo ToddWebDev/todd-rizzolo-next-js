@@ -16,7 +16,7 @@
       rgba(22, 76, 105, 0.9),
       rgba(13, 45, 62, 0.9)
     ),
-    url('../images/ministrygrid-mockup.webp');
+    url('../images/travel-log.jpg');
   background-position-x: center;
   background-repeat: repeat, no-repeat;
   background-size: cover;
@@ -143,13 +143,13 @@
   .content:before {
     display: none;
   }
-  
+
   .listFill {
     display: flex;
     flex-grow: 1;
     opacity: 0.3;
   }
-  
+
   .listBreak {
     display: flex;
     flex-basis: 100%;

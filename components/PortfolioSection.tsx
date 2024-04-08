@@ -5,10 +5,53 @@ const Portfolio = () => (
   <section>
     <h2>My Portfolio</h2>
     <p>
-      I was the lead front-end software developer and the user interface designer for
-      these web apps.
+      I was the lead front-end software developer and the user interface
+      designer for these web apps.
     </p>
-    <div className={styles.cards}>
+    <div
+      style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(2, 1fr)',
+        gridGap: '1em',
+      }}
+    >
+      <div className={styles.card}>
+        <i aria-hidden className='fas fa-compass'></i>
+        <div style={{ display: 'flex', flexFlow: 'column-reverse' }}>
+          <h3 style={{ marginTop: '-0.75em' }}>White Label Style Guide</h3>
+          <h4
+            style={{
+              fontSize: '0.75em',
+              margin: '0',
+              color: `var(--text-color-medium)`,
+            }}
+          >
+            2023
+          </h4>
+        </div>
+        <p>
+          A &lsquo;from-scratch&rsquo; style guide and component library built
+          with white label theming in mind for Lendio SaaS products.
+        </p>
+        <ul>
+          <li>Vue</li>
+          <li>Tailwind CSS</li>
+          <li>UX/UI</li>
+        </ul>
+        <div>
+          <button
+            onClick={() =>
+              window.open(
+                'https://lendio-styleguide-tailwind.netlify.app',
+                '_blank',
+                'noopener'
+              )
+            }
+          >
+            Visit Guide <i aria-hidden className='fas fa-external-link-alt'></i>
+          </button>
+        </div>
+      </div>
       <div className={styles.card}>
         <i aria-hidden className='fas fa-bible'></i>
         <div style={{ display: 'flex', flexFlow: 'column-reverse' }}>
@@ -20,7 +63,7 @@ const Portfolio = () => (
               color: `var(--text-color-medium)`,
             }}
           >
-            2020-2022
+            2022-2020
           </h4>
         </div>
         <p>A digital curriculum web app tailored for church leaders.</p>
@@ -67,7 +110,7 @@ const Portfolio = () => (
               color: `var(--text-color-medium)`,
             }}
           >
-            2017-2019
+            2019-2017
           </h4>
         </div>
         <p>A training web app tailored for church leaders.</p>
