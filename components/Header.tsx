@@ -36,7 +36,7 @@ const Header = () => {
         <h1>Todd Rizzolo</h1>
         <h2>
           {' '}
-          Software Developer.
+          Software Engineer.
           <br />
           User Interface Builder.
         </h2>

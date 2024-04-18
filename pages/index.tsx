@@ -39,15 +39,15 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Todd Rizzolo • Web Developer</title>
+        <title>Todd Rizzolo • Software Engineer</title>
         <link rel='canonical' href='https://www.toddrizzolo.com' />
         <meta name='theme-color' content='#164c69' />
         <meta property='og:type' content='website' />
         <meta property='og:image' content='https://www.toddrizzolo.com/lendiostyleguide.png'></meta>
-        <meta name='description' content='Todd Rizzolo Software Developer Portfolio Website' />
+        <meta name='description' content='Todd Rizzolo Software Engineer Portfolio Website' />
         <meta name='twitter:card' content='summary_large_image' />
-        <meta name='twitter:title' content='Todd Rizzolo • Software Developer' />
-        <meta name='twitter:description' content='Todd Rizzolo Software Developer Portfolio Website' />
+        <meta name='twitter:title' content='Todd Rizzolo • Software Engineer' />
+        <meta name='twitter:description' content='Todd Rizzolo Software Engineer Portfolio Website' />
         <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png' />
         <link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png' />
         <link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png' />
