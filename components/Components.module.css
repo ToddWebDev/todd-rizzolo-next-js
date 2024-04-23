@@ -66,11 +66,21 @@
   flex: 1;
 }
 
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: stretch;
+}
+
 .feature {
+  flex: 1;
   height: 300px;
 }
 
 .video {
+  border-radius: var(--border-radius);
+  background-color: black;
   height: 300px;
   width: 100%;
 }
@@ -85,13 +95,13 @@
   .smallCards {
     flex-direction: row;
   }
-  .video {
-    width: 71%;
-  }
 }
 
 @media only screen and (min-width: 1200px) {
   .card div {
+    flex-direction: row;
+  }
+  .features {
     flex-direction: row;
   }
 }
