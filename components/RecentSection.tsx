@@ -6,7 +6,7 @@ const Recent = () => (
     <h2>My Current Projects</h2>
     <p>My latest design and development work.</p>
     <div className={styles.cards}>
-      <div className={styles.card} style={{ maxWidth: '390px' }}>
+      <div className={styles.card}>
         <i aria-hidden className='fas fa-university'></i>
         <div style={{ display: 'flex', flexFlow: 'column-reverse' }}>
           <h3 style={{ marginTop: '-0.75em' }}>VA.gov</h3>
@@ -40,7 +40,7 @@ const Recent = () => (
           </button>
         </div>
       </div>
-      <div className={styles.card} style={{ maxWidth: '390px' }}>
+      <div className={styles.card}>
         <i aria-hidden className='fas fa-car'></i>
         <div style={{ display: 'flex', flexFlow: 'column-reverse' }}>
           <h3 style={{ marginTop: '-0.75em' }}>Travel Log</h3>

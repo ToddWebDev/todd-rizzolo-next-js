@@ -8,13 +8,7 @@ const Portfolio = () => (
       I was the lead front-end software engineer and the user interface designer
       for these web apps.
     </p>
-    <div
-      style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(2, 1fr)',
-        gridGap: '1em',
-      }}
-    >
+    <div className={styles.cards}>
       <div className={styles.card}>
         <i aria-hidden className='fas fa-compass'></i>
         <div style={{ display: 'flex', flexFlow: 'column-reverse' }}>

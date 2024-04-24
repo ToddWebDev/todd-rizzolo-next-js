@@ -1,8 +1,17 @@
-.cards,
+.cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1em;
+}
+
 .smallCards {
   display: flex;
   flex-direction: column;
   gap: 1em;
+}
+
+.smallCards > .card {
+  flex: 1;
 }
 
 .smallCards > .card > i {
@@ -15,7 +24,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: 1;
   background: var(--white);
   padding: 1rem;
   border: var(--border-width) solid var(--base-five);
@@ -91,13 +99,15 @@
 }
 
 @media only screen and (min-width: 992px) {
-  .cards,
   .smallCards {
     flex-direction: row;
   }
 }
 
 @media only screen and (min-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .card div {
     flex-direction: row;
   }
