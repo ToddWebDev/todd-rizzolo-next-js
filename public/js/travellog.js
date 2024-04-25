@@ -1727,7 +1727,6 @@ const logs = [
           date: '2024-04-13',
           departure: 'Salt Lake City',
           destination: 'Aspen',
-          description: 'Upcoming Trip',
           state: 'Colorado',
           distance: 400,
         },
