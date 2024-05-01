@@ -43,14 +43,14 @@ const Header = () => {
         <h3 style={{ fontSize: '1.17em' }}>
           <i aria-hidden className='fas fa-map-pin'></i> Salt Lake City, Utah
         </h3>
-        {/* <button onClick={downloadResume}>
+        <button onClick={downloadResume}>
           <span
             aria-hidden
             className='fas fa-download'
             style={{ marginRight: '8px' }}
           ></span>
           Download Resume
-        </button> */}
+        </button>
       </div>
       <div>
         <ContactFooter />
