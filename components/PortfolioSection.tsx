@@ -36,7 +36,7 @@ const Portfolio = () => (
           <button
             onClick={() =>
               window.open(
-                'https://lendio-styleguide-tailwind.netlify.app',
+                'https://www.toddrizzolo.com/lendio-style-guide/index.html',
                 '_blank',
                 'noopener'
               )
