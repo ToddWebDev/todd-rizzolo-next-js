@@ -2174,6 +2174,35 @@ const golf_courses = {
       type: 'Feature',
       geometry: {
         type: 'Point',
+        coordinates: [-84.22549830810513, 39.22863671556654],
+      },
+      properties: {
+        type: 'golf-course',
+        mode: 'recreation',
+        destination: 'Hickory Woods Golf Courses',
+        city: 'Loveland',
+        state: 'Ohio',
+        date: '2020-11-07',
+      },
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-81.76412056671832, 40.79344879159174],
+      },
+      properties: {
+        type: 'golf-course',
+        mode: 'recreation',
+        destination: 'Riceland Golf Course',
+        city: 'Orrville',
+        state: 'Ohio',
+      },
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
         coordinates: [-84.25369080013269, 39.615032924657754],
       },
       properties: {
