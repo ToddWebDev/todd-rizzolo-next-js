@@ -4,7 +4,7 @@ import styles from './Components.module.css'
 const Recent = () => (
   <section>
     <h2>My Current Projects</h2>
-    <p>My latest design and development work.</p>
+    <p>My latest software engineering work.</p>
     <div className={styles.cards}>
       <div className={styles.card}>
         <i aria-hidden className='fas fa-university'></i>
@@ -28,6 +28,7 @@ const Recent = () => (
           <li>VA Forms Library</li>
           <li>Javascript</li>
           <li>API</li>
+          <li>Accessibility</li>
         </ul>
         <div>
           <button

@@ -5,10 +5,21 @@ import styles from './Components.module.css'
 const Highlight = () => {
   const youtubeVideoId = 'ZRaib_BmU_I'
   const startTime = 246
-
+  // hWZKkr_pEQs
   return (
     <section>
       <h2>My Showcase</h2>
+      <p>
+        In 2024, I've been focused on web accessibility with the U.S. Department
+        of Veterans Affairs.
+      </p>
+      <div className={styles.features}>
+        <div className={styles.feature}>
+          <div className={styles.video}>
+            <YouTubeEmbed videoId='hWZKkr_pEQs' startTime='0' />
+          </div>
+        </div>
+      </div>
       <p>
         A few video highlights of my design and development work for Digital
         Curriculum in 2022.
