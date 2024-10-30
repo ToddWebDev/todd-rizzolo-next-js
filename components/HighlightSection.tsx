@@ -6,14 +6,18 @@ const Highlight = () => {
   return (
     <section>
       <h2>My Showcase</h2>
-      <p>
+      <p id='showcase'>
         In 2024, I&apos;ve been focused on web accessibility with the U.S.
         Department of Veterans Affairs.
       </p>
       <div className={styles.features}>
         <div className={styles.feature}>
           <div className={styles.video}>
-            <YouTubeEmbed videoId={'hWZKkr_pEQs'} startTime={0} />
+            <YouTubeEmbed
+              title='Web Accessibility with the VA'
+              videoId={'hWZKkr_pEQs'}
+              startTime={0}
+            />
           </div>
         </div>
       </div>
@@ -35,7 +39,11 @@ const Highlight = () => {
         </div>
         <div className={styles.feature}>
           <div className={styles.video}>
-            <YouTubeEmbed videoId={'ZRaib_BmU_I'} startTime={246} />
+            <YouTubeEmbed
+              title="Lifeway's Digital Curriculum"
+              videoId={'ZRaib_BmU_I'}
+              startTime={246}
+            />
           </div>
         </div>
       </div>

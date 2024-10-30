@@ -18,7 +18,11 @@ const Overview = () => {
         {readMore ? descriptionText : descriptionText.slice(0, 331) + '...'}
         <br />
         {!readMore && (
-          <a href='#' onClick={(e) => handleClick(e)}>
+          <a
+            href='#'
+            onClick={(e) => handleClick(e)}
+            aria-label='Read more about Todd Rizzolo'
+          >
             Read More
           </a>
         )}

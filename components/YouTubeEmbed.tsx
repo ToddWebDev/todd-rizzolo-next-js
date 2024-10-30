@@ -1,6 +1,6 @@
 import React from 'react'
 
-function YouTubeEmbed({ videoId, startTime }) {
+function YouTubeEmbed({ title = 'Youtube video player', videoId, startTime }) {
   const embedUrl = `https://www.youtube.com/embed/${videoId}?start=${
     startTime || 0
   }`
@@ -10,7 +10,7 @@ function YouTubeEmbed({ videoId, startTime }) {
       width='100%'
       height='100%'
       src={embedUrl}
-      title='YouTube video player'
+      title={title}
       allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
       allowFullScreen
     ></iframe>

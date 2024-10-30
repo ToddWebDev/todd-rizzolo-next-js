@@ -34,6 +34,7 @@ const Portfolio = () => (
         </ul>
         <div>
           <button
+            aria-label='Visit guide (opens in new tab)'
             onClick={() =>
               window.open(
                 'https://www.toddrizzolo.com/lendio-style-guide/index.html',
@@ -68,6 +69,7 @@ const Portfolio = () => (
         </ul>
         <div>
           <button
+            aria-label='Visit Marketing (opens in new tab)'
             onClick={() =>
               window.open(
                 'https://ministrygrid.com/curriculum',
@@ -80,6 +82,7 @@ const Portfolio = () => (
             <i aria-hidden className='fas fa-external-link-alt'></i>
           </button>
           <button
+            aria-label='Visit app (opens in new tab)'
             className='secondary'
             onClick={() =>
               window.open(
@@ -115,6 +118,7 @@ const Portfolio = () => (
         </ul>
         <div>
           <button
+            aria-label='Visit Marketing (opens in new tab)'
             onClick={() =>
               window.open('https://ministrygrid.com/', '_blank', 'noopener')
             }
@@ -123,6 +127,7 @@ const Portfolio = () => (
             <i aria-hidden className='fas fa-external-link-alt'></i>
           </button>
           <button
+            aria-label='Visit app (opens in new tab)'
             className='secondary'
             onClick={() =>
               window.open(

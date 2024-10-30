@@ -9,7 +9,7 @@ const Projects = () => (
       examples of my code on these platforms.
     </p>
     <div className={styles.smallCards}>
-    <div className={styles.card}>
+      <div className={styles.card}>
         <i aria-hidden className='fab fa-github small'></i>
         <h3>GitHub</h3>
         <ul>
@@ -19,6 +19,7 @@ const Projects = () => (
         </ul>
         <div>
           <button
+            aria-label='Visit github profile (opens in new tab)'
             onClick={() =>
               window.open(
                 'https://www.github.com/toddwebdev',
@@ -40,6 +41,7 @@ const Projects = () => (
         </ul>
         <div>
           <button
+            aria-label='Visit code sandbox profile (opens in new tab)'
             onClick={() =>
               window.open(
                 'https://codesandbox.io/u/ToddWebDev',
@@ -62,6 +64,7 @@ const Projects = () => (
         </ul>
         <div>
           <button
+            aria-label='Visit codepen profile (opens in new tab)'
             onClick={() =>
               window.open(
                 'https://www.codepen.io/toddwebdev',

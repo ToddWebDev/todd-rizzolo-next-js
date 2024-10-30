@@ -27,7 +27,7 @@ const Header = () => {
           {profilePic && (
             <Image
               src='https://avatars.githubusercontent.com/u/7394764?v=4'
-              alt='Profile Image'
+              alt='Todd Rizzolo'
               width='350'
               height='350'
             />
@@ -43,7 +43,7 @@ const Header = () => {
         <h3 style={{ fontSize: '1.17em' }}>
           <i aria-hidden className='fas fa-map-pin'></i> Salt Lake City, Utah
         </h3>
-        <button onClick={downloadResume}>
+        <button onClick={downloadResume} aria-label='Download Resume as PDF'>
           <span
             aria-hidden
             className='fas fa-download'

@@ -32,6 +32,7 @@ const Recent = () => (
         </ul>
         <div>
           <button
+            aria-label='Visit VA.gov (opens in new tab)'
             onClick={() =>
               window.open('https://www.va.gov', '_blank', 'noopener')
             }
@@ -63,6 +64,7 @@ const Recent = () => (
         </ul>
         <div>
           <button
+            aria-label='Visit travel log (opens in new tab)'
             onClick={() =>
               window.open(
                 'https://www.toddrizzolo.com/travellog/index.html',

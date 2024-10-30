@@ -22,6 +22,7 @@ const Prototypes = () => (
         </ul>
         <div>
           <button
+            aria-label='View organization dashboard prototype (opens in new tab)'
             onClick={() =>
               window.open(
                 'https://www.figma.com/proto/augSswlyPFhXgoZudQPG5j/Manage-Training-Catalog?page-id=0%3A1&node-id=33%3A1840&viewport=367%2C48%2C0.23&scaling=min-zoom&starting-point-node-id=33%3A1840',
@@ -48,6 +49,7 @@ const Prototypes = () => (
         </ul>
         <div>
           <button
+            aria-label='View design system prototype (opens in new tab)'
             onClick={() =>
               window.open(
                 'https://www.figma.com/proto/Mz9D9Fti5A5aSqHrxDWbNh5v/Ministry-Grid-Design-System?page-id=0%3A1&node-id=117%3A29&viewport=367%2C48%2C0.18&scaling=min-zoom&starting-point-node-id=117%3A29',
@@ -73,6 +75,7 @@ const Prototypes = () => (
         </ul>
         <div>
           <button
+            aria-label='View course settings prototype (opens in new tab)'
             onClick={() =>
               window.open(
                 'https://www.figma.com/proto/augSswlyPFhXgoZudQPG5j/Manage-Training-Catalog?page-id=0%3A1&node-id=35%3A565&viewport=367%2C48%2C0.23&scaling=min-zoom&starting-point-node-id=35%3A565&show-proto-sidebar=1',
