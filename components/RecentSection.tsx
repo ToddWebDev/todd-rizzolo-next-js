@@ -17,13 +17,10 @@ const Recent = () => (
               color: `var(--text-color-medium)`,
             }}
           >
-            2024
+            2025-2024
           </h4>
         </div>
-        <p>
-          The Veterans Pension Benefits application for the U.S. Department of
-          Veterans Affairs.
-        </p>
+        <p>Digital applications for the U.S. Department of Veterans Affairs.</p>
         <ul>
           <li>VA Forms Library</li>
           <li>Javascript</li>
