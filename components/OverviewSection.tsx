@@ -13,7 +13,7 @@ const Overview = () => {
   }
   return (
     <section>
-      <h2>Software Engineer</h2>
+      <h1 style={{ fontSize: '1.75em' }}>Software Engineer</h1>
       <blockquote>
         {readMore ? descriptionText : descriptionText.slice(0, 331) + '...'}
         <br />
@@ -28,7 +28,7 @@ const Overview = () => {
         )}
       </blockquote>
 
-      <h3>My Professional Skills</h3>
+      <h2>My Professional Skills</h2>
       <ul>
         <li>Javascript</li>
         <li>Typescript</li>
