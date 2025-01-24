@@ -7,7 +7,7 @@ const Highlight = () => {
     <section>
       <h2>My Showcase</h2>
       <p id='showcase'>
-        In 2024, I&apos;ve been focused on web accessibility with the U.S.
+        Recently, I&apos;ve been focused on web accessibility with the U.S.
         Department of Veterans Affairs.
       </p>
       <div className={styles.features}>
