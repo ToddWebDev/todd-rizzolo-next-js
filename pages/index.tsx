@@ -51,12 +51,6 @@ export default function Home() {
           name='description'
           content='Todd Rizzolo Software Engineer Portfolio Website'
         />
-        <meta name='twitter:card' content='summary_large_image' />
-        <meta name='twitter:title' content='Todd Rizzolo • Software Engineer' />
-        <meta
-          name='twitter:description'
-          content='Todd Rizzolo Software Engineer Portfolio Website'
-        />
         <link
           rel='apple-touch-icon'
           sizes='180x180'

@@ -27,17 +27,6 @@ const SocialMediaFooter = () => (
       </li>
       <li>
         <a
-          href='https://www.twitter.com/toddwebdev'
-          target='_blank'
-          rel='noreferrer'
-          className='icon'
-          aria-label='Twitter'
-        >
-          <span aria-hidden className='fab fa-twitter'></span>
-        </a>
-      </li>
-      <li>
-        <a
           href='https://www.codepen.io/toddwebdev'
           target='_blank'
           rel='noreferrer'
@@ -45,17 +34,6 @@ const SocialMediaFooter = () => (
           aria-label='Codepen'
         >
           <span aria-hidden className='fab fa-codepen'></span>
-        </a>
-      </li>
-      <li>
-        <a
-          href='https://www.youtube.com/channel/UCzIrcCwm52dXyIo2jHUp9zQ'
-          target='_blank'
-          rel='noreferrer'
-          className='icon'
-          aria-label='YouTube'
-        >
-          <span aria-hidden className='fab fa-youtube'></span>
         </a>
       </li>
       <li>
