@@ -45,7 +45,7 @@ export default function Home() {
         <meta property='og:type' content='website' />
         <meta
           property='og:image'
-          content='https://www.toddrizzolo.com/images/Todd-Yellowstone-2025.jpg'
+          content='https://www.toddrizzolo.com/Todd-Yellowstone-2025.jpg'
         ></meta>
         <meta
           name='description'
