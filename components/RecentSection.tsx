@@ -17,7 +17,7 @@ const Recent = () => (
               color: `var(--text-color-medium)`,
             }}
           >
-            2025-2024
+            2026-2024
           </h4>
         </div>
         <p>Digital applications for the U.S. Department of Veterans Affairs.</p>
@@ -66,7 +66,7 @@ const Recent = () => (
               window.open(
                 'https://www.toddrizzolo.com/travellog/index.html',
                 '_blank',
-                'noopener'
+                'noopener',
               )
             }
           >
