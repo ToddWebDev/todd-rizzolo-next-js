@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import profilePic from '../images/JoshuaTreeNP22.jpeg'
 import styles from './Layout.module.css'
 import ContactFooter from './ContactFooter'
 
@@ -24,14 +23,12 @@ const Header = () => {
     <header className={styles.header}>
       <div>
         <div className={styles.image}>
-          {profilePic && (
-            <Image
-              src='https://avatars.githubusercontent.com/u/7394764?v=4'
-              alt='Todd Rizzolo'
-              width={350}
-              height={350}
-            />
-          )}
+          <Image
+            src='https://avatars.githubusercontent.com/u/7394764?v=4'
+            alt='Todd Rizzolo'
+            width={350}
+            height={350}
+          />
         </div>
         <h1>Todd Rizzolo</h1>
         <h2>
