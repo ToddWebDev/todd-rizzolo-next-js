@@ -26,8 +26,9 @@ const Header = () => {
           <Image
             src='https://avatars.githubusercontent.com/u/7394764?v=4'
             alt='Todd Rizzolo'
-            width={460}
-            height={460}
+            width={350}
+            height={350}
+            unoptimized
           />
         </div>
         <h1>Todd Rizzolo</h1>
