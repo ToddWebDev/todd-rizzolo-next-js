@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "generate:travellog-config": "node scripts/generate-travellog-config.js",
+    "dev": "yarn generate:travellog-config && next dev",
+    "build": "yarn generate:travellog-config && next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -20,10 +21,12 @@
     "travel-log-js": "^1.0.0"
   },
   "devDependencies": {
-    "@types/node": "^17.0.23",
-    "@types/react": "^17.0.43",
+    "@types/node": "17.0.23",
+    "@types/react": "17.0.43",
+    "@types/react-dom": "17.0.17",
+    "dotenv": "^17.3.1",
     "eslint": "8.12.0",
     "eslint-config-next": "12.1.1",
-    "typescript": "^4.6.3"
+    "typescript": "4.6.3"
   }
 }
