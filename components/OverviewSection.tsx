@@ -5,7 +5,7 @@ const Overview = () => {
   const [readMore, setReadMore] = useState(false)
 
   const descriptionText =
-    "I’m an experienced Software Engineer passionate about building clean, accessible, and scalable web applications. With strong expertise in JavaScript and modern frontend development, I bring ideas to life through thoughtful design implementation and well-tested code. I enjoy collaborating across teams, tackling complex challenges, and delivering digital products that are both technically robust and genuinely useful."
+    'I’m a full stack Software Engineer with a focus on frontend architecture and user experience. I take ownership of features across the stack, from crafting accessible, responsive interfaces to designing and integrating backend services. My work emphasizes scalable patterns, strong testing practices, and clean abstractions. I thrive in agile environments and enjoy solving complex problems with pragmatic, well-engineered solutions.'
 
   const handleClick = (e) => {
     e.preventDefault()
