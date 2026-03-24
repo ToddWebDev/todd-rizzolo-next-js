@@ -3,12 +3,48 @@ import styles from './Components.module.css'
 
 const Portfolio = () => (
   <section>
-    <h2>My Portfolio</h2>
+    <h2>Portfolio</h2>
     <p>
       I was the lead front-end software engineer and the user interface designer
       for these web apps.
     </p>
     <div className={styles.cards}>
+      <div className={styles.card}>
+        <i aria-hidden className='fas fa-car'></i>
+        <div style={{ display: 'flex', flexFlow: 'column-reverse' }}>
+          <h3 style={{ marginTop: '-0.75em' }}>Travel Log</h3>
+          <h4
+            style={{
+              fontSize: '0.75em',
+              margin: '0',
+              color: `var(--text-color-medium)`,
+            }}
+          >
+            2024-2023
+          </h4>
+        </div>
+        <p>An interactive travel log built with the MapBox API.</p>
+        <ul>
+          <li>Javascript</li>
+          <li>API</li>
+          <li>UX/UI</li>
+        </ul>
+        <div>
+          <button
+            aria-label='Visit travel log (opens in new tab)'
+            onClick={() =>
+              window.open(
+                'https://www.toddrizzolo.com/travellog/index.html',
+                '_blank',
+                'noopener',
+              )
+            }
+          >
+            Visit Travel Log{' '}
+            <i aria-hidden className='fas fa-external-link-alt'></i>
+          </button>
+        </div>
+      </div>
       <div className={styles.card}>
         <i aria-hidden className='fas fa-compass'></i>
         <div style={{ display: 'flex', flexFlow: 'column-reverse' }}>
@@ -39,7 +75,7 @@ const Portfolio = () => (
               window.open(
                 'https://www.toddrizzolo.com/lendio-style-guide/index.html',
                 '_blank',
-                'noopener'
+                'noopener',
               )
             }
           >
@@ -74,7 +110,7 @@ const Portfolio = () => (
               window.open(
                 'https://ministrygrid.com/curriculum',
                 '_blank',
-                'noopener'
+                'noopener',
               )
             }
           >
@@ -88,7 +124,7 @@ const Portfolio = () => (
               window.open(
                 'https://ministrygrid.lifeway.com/#/bible-studies',
                 '_blank',
-                'noopener'
+                'noopener',
               )
             }
           >
@@ -133,7 +169,7 @@ const Portfolio = () => (
               window.open(
                 'https://ministrygrid.lifeway.com/#/catalog',
                 '_blank',
-                'noopener'
+                'noopener',
               )
             }
           >

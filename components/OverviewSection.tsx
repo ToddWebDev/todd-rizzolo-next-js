@@ -28,7 +28,7 @@ const Overview = () => {
         )}
       </blockquote>
 
-      <h2>My Professional Skills</h2>
+      <h2>Professional Skills</h2>
       <ul>
         <li>Javascript</li>
         <li>Typescript</li>

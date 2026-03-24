@@ -5,7 +5,7 @@ import styles from './Components.module.css'
 const Highlight = () => {
   return (
     <section>
-      <h2>My Showcase</h2>
+      <h2>Showcase</h2>
       <p id='showcase'>
         Recently, I&apos;ve been focused on web accessibility with the U.S.
         Department of Veterans Affairs.

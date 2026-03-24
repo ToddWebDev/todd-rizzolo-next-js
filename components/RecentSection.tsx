@@ -3,13 +3,13 @@ import styles from './Components.module.css'
 
 const Recent = () => (
   <section>
-    <h2>My Current Projects</h2>
-    <p>My latest software engineering work.</p>
+    <h2>Featured Work</h2>
+    <p>Recent work focused on large-scale government digital services.</p>
     <div className={styles.cards}>
-      <div className={styles.card}>
+      <div className={styles.card} style={{ gridColumn: 'span 2' }}>
         <i aria-hidden className='fas fa-university'></i>
         <div style={{ display: 'flex', flexFlow: 'column-reverse' }}>
-          <h3 style={{ marginTop: '-0.75em' }}>VA.gov</h3>
+          <h3 style={{ marginTop: '-0.75em' }}>VA Benefits Forms</h3>
           <h4
             style={{
               fontSize: '0.75em',
@@ -20,12 +20,16 @@ const Recent = () => (
             2026-2024
           </h4>
         </div>
-        <p>Digital applications for the U.S. Department of Veterans Affairs.</p>
+        <p>
+          Led digitization of U.S. Department of Veterans Affairs (VA) benefits
+          forms on VA.gov, driving accessibility improvements, design system
+          adoption, and scalable form architecture across multiple applications.
+        </p>
         <ul>
           <li>VA Forms Library</li>
-          <li>Javascript</li>
-          <li>API</li>
-          <li>Accessibility</li>
+          <li>React</li>
+          <li>Accessibility (508/WCAG)</li>
+          <li>Design Systems</li>
         </ul>
         <div>
           <button
@@ -35,42 +39,6 @@ const Recent = () => (
             }
           >
             Visit VA.gov{' '}
-            <i aria-hidden className='fas fa-external-link-alt'></i>
-          </button>
-        </div>
-      </div>
-      <div className={styles.card}>
-        <i aria-hidden className='fas fa-car'></i>
-        <div style={{ display: 'flex', flexFlow: 'column-reverse' }}>
-          <h3 style={{ marginTop: '-0.75em' }}>Travel Log</h3>
-          <h4
-            style={{
-              fontSize: '0.75em',
-              margin: '0',
-              color: `var(--text-color-medium)`,
-            }}
-          >
-            2024-2023
-          </h4>
-        </div>
-        <p>An interactive travel log built with the MapBox API.</p>
-        <ul>
-          <li>Javascript</li>
-          <li>API</li>
-          <li>UX/UI</li>
-        </ul>
-        <div>
-          <button
-            aria-label='Visit travel log (opens in new tab)'
-            onClick={() =>
-              window.open(
-                'https://www.toddrizzolo.com/travellog/index.html',
-                '_blank',
-                'noopener',
-              )
-            }
-          >
-            Visit Travel Log{' '}
             <i aria-hidden className='fas fa-external-link-alt'></i>
           </button>
         </div>

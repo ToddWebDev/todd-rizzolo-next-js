@@ -3,7 +3,7 @@ import styles from './Components.module.css'
 
 const Prototypes = () => (
   <section>
-    <h2>My Prototypes</h2>
+    <h2>Prototypes</h2>
     <p>
       Here are some examples of my high fidelity prototypes used to drive
       product development.
@@ -27,7 +27,7 @@ const Prototypes = () => (
               window.open(
                 'https://www.figma.com/proto/augSswlyPFhXgoZudQPG5j/Manage-Training-Catalog?page-id=0%3A1&node-id=33%3A1840&viewport=367%2C48%2C0.23&scaling=min-zoom&starting-point-node-id=33%3A1840',
                 '_blank',
-                'noopener'
+                'noopener',
               )
             }
           >
@@ -54,7 +54,7 @@ const Prototypes = () => (
               window.open(
                 'https://www.figma.com/proto/Mz9D9Fti5A5aSqHrxDWbNh5v/Ministry-Grid-Design-System?page-id=0%3A1&node-id=117%3A29&viewport=367%2C48%2C0.18&scaling=min-zoom&starting-point-node-id=117%3A29',
                 '_blank',
-                'noopener'
+                'noopener',
               )
             }
           >
@@ -80,7 +80,7 @@ const Prototypes = () => (
               window.open(
                 'https://www.figma.com/proto/augSswlyPFhXgoZudQPG5j/Manage-Training-Catalog?page-id=0%3A1&node-id=35%3A565&viewport=367%2C48%2C0.23&scaling=min-zoom&starting-point-node-id=35%3A565&show-proto-sidebar=1',
                 '_blank',
-                'noopener'
+                'noopener',
               )
             }
           >

@@ -3,7 +3,7 @@ import styles from './Components.module.css'
 
 const Projects = () => (
   <section>
-    <h2>My Code</h2>
+    <h2>Code</h2>
     <p>
       While much of the code I write for my employers is private, I do share
       examples of my code on these platforms.
@@ -24,7 +24,7 @@ const Projects = () => (
               window.open(
                 'https://www.github.com/toddwebdev',
                 '_blank',
-                'noopener'
+                'noopener',
               )
             }
           >
@@ -46,7 +46,7 @@ const Projects = () => (
               window.open(
                 'https://codesandbox.io/u/ToddWebDev',
                 '_blank',
-                'noopener'
+                'noopener',
               )
             }
           >
@@ -69,7 +69,7 @@ const Projects = () => (
               window.open(
                 'https://www.codepen.io/toddwebdev',
                 '_blank',
-                'noopener'
+                'noopener',
               )
             }
           >
