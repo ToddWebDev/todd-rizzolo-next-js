@@ -5,8 +5,8 @@ const Projects = () => (
   <section>
     <h2>Code</h2>
     <p>
-      While much of the code I write for my employers is private, I do share
-      examples of my code on these platforms.
+      A mix of professional and personal code, including public repositories
+      from my work on VA.gov and personal projects.
     </p>
     <div className={styles.smallCards}>
       <div className={styles.card}>

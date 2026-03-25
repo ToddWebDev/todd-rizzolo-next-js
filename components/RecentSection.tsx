@@ -4,7 +4,10 @@ import styles from './Components.module.css'
 const Recent = () => (
   <section>
     <h2>Featured Work</h2>
-    <p>Recent work focused on large-scale government digital services.</p>
+    <p>
+      Large-scale government digital services with a focus on accessibility,
+      scalable form architecture, and modern frontend systems.
+    </p>
     <div className={styles.cards}>
       <div className={styles.card} style={{ gridColumn: 'span 2' }}>
         <i aria-hidden className='fas fa-university'></i>
@@ -30,6 +33,7 @@ const Recent = () => (
           <li>React</li>
           <li>Accessibility (508/WCAG)</li>
           <li>Design Systems</li>
+          <li>API</li>
         </ul>
         <div>
           <button

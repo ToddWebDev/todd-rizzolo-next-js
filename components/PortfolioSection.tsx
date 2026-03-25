@@ -5,8 +5,8 @@ const Portfolio = () => (
   <section>
     <h2>Portfolio</h2>
     <p>
-      I was the lead front-end software engineer and the user interface designer
-      for these web apps.
+      Led frontend engineering and UI design for these applications, building
+      scalable and user-focused experiences.
     </p>
     <div className={styles.cards}>
       <div className={styles.card}>
