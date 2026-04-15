@@ -24,9 +24,10 @@ const Recent = () => (
           </h4>
         </div>
         <p>
-          Led digitization of U.S. Department of Veterans Affairs (VA) benefits
-          forms on VA.gov, driving accessibility improvements, design system
-          adoption, and scalable form architecture across multiple applications.
+          Leading digitization of U.S. Department of Veterans Affairs (VA)
+          benefits forms on VA.gov, driving accessibility improvements, design
+          system adoption, and scalable form architecture across multiple
+          applications.
         </p>
         <ul>
           <li>VA Forms Library</li>
