@@ -88,6 +88,11 @@ body[data-theme='dark'] {
     url('/pattern-randomized-dark.svg');
 }
 
+::selection {
+  background-color: var(--primary-one);
+  color: #fff;
+}
+
 section {
   padding: 3rem 0;
 }
