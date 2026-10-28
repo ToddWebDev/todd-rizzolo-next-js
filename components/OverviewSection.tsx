@@ -31,22 +31,22 @@ const Overview = () => {
       <h2>Professional Skills</h2>
       <h3>Frontend Development</h3>
       <ul>
-        <li>Javascript</li>
-        <li>Typescript</li>
-        <li>React</li>
-        <li>Vue</li>
-        <li>Angular</li>
-        <li>Next.js</li>
+        <li>Frontend Architecture</li>
+        <li>Javascript &amp; Typescript</li>
+        <li>Component Based Architecture</li>
+        <li>Responsive UI Development</li>
+        <li>State Management</li>
+        <li>Performance Optimization</li>
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
       </ul>
       <h3>Backend Development</h3>
       <ul>
-        <li>APIs</li>
-        <li>Node</li>
-        <li>Express</li>
-        <li>Laravel</li>
-        <li>PHP</li>
+        <li>API Development</li>
+        <li>Server Side Development</li>
+        <li>Data Management</li>
+        <li>Business Logic</li>
+        <li>System Integration</li>
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
       </ul>
@@ -61,33 +61,37 @@ const Overview = () => {
       </ul>
       <h3>AI Assisted Development</h3>
       <ul>
-        <li>AI Coding Tools</li>
         <li>AI Powered Workflows</li>
+        <li>AI Assisted Coding</li>
+        <li>AI Driven Problem Solving</li>
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
       </ul>
       <h3>Cloud &amp; DevOps</h3>
       <ul>
         <li>CI/CD</li>
-        <li>Docker</li>
-        <li>Netlify</li>
-        <li>AWS</li>
+        <li>Deployment Automation</li>
+        <li>Containerization</li>
+        <li>Cloud Services</li>
+        <li>Environment Configuration</li>
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
       </ul>
       <h3>Testing &amp; Security</h3>
       <ul>
-        <li>Testing</li>
+        <li>Automated Testing</li>
         <li>Debugging</li>
         <li>Web Security</li>
-        <li>OAuth</li>
+        <li>Authentication &amp; Authorization</li>
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
       </ul>
-      <h3>Design Systems</h3>
+      <h3>UI/UX &amp; Design Systems</h3>
       <ul>
         <li>Component Libraries</li>
+        <li>Reusable Design Patterns</li>
         <li>Style Guides</li>
+        <li>User Experience</li>
         <li>Responsive Layouts</li>
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
