@@ -34,7 +34,6 @@ const Overview = () => {
         <li>Frontend Architecture</li>
         <li>Javascript &amp; Typescript</li>
         <li>Component Based Architecture</li>
-        <li>Responsive UI Development</li>
         <li>State Management</li>
         <li>Performance Optimization</li>
         <li className={styles.listFill}>&nbsp;</li>
@@ -80,19 +79,19 @@ const Overview = () => {
       <h3>Testing &amp; Security</h3>
       <ul>
         <li>Automated Testing</li>
+        <li>Authentication &amp; Authorization</li>
         <li>Debugging</li>
         <li>Web Security</li>
-        <li>Authentication &amp; Authorization</li>
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
       </ul>
-      <h3>UI/UX &amp; Design Systems</h3>
+      <h3>Design Systems</h3>
       <ul>
         <li>Component Libraries</li>
         <li>Reusable Design Patterns</li>
         <li>Style Guides</li>
-        <li>User Experience</li>
-        <li>Responsive Layouts</li>
+        <li>User Experience (UX)</li>
+        <li>Responsive Layouts (UI)</li>
         <li className={styles.listFill}>&nbsp;</li>
         <li className={styles.listBreak}></li>
       </ul>
